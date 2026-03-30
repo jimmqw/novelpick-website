@@ -23,14 +23,27 @@
         h3 { font-size: 1.2rem; margin: 1.5rem 0 0.8rem; }
         p { margin-bottom: 1rem; }
         ul { margin: 1rem 0 1rem 1.5rem; }
+        .book-info { background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%); color: white; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; }
+        .book-info h3 { color: white; margin-top: 0; margin-bottom: 1rem; }
+        .book-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 0.95rem; }
+        .book-meta strong { color: #ffd700; }
         .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
         .pros, .cons { padding: 1rem; border-radius: 8px; }
         .pros { background: #e8f5e9; }
         .cons { background: #ffebee; }
-        .pros h4 { color: #2e7d32; margin-bottom: 0.5rem; }
-        .cons h4 { color: #c62828; margin-bottom: 0.5rem; }
+        .pros h4, .cons h4 { margin-bottom: 0.5rem; }
+        .pros h4 { color: #2e7d32; }
+        .cons h4 { color: #c62828; }
+        .warning-box { background: #fff3e0; border-left: 4px solid #ff9800; padding: 1rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .warning-box h4 { color: #e65100; margin-bottom: 0.5rem; }
+        .btn { display: inline-block; background: #8e44ad; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; margin-right: 0.5rem; }
+        .btn:hover { background: #7d3c98; text-decoration: none; }
+        .similar-books { background: #f3e5f5; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; }
+        .similar-books h4 { color: #8e44ad; margin-bottom: 1rem; }
         .verdict { background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%); color: white; padding: 1.5rem; border-radius: 12px; margin-top: 2rem; }
+        .verdict h3 { color: white; margin-top: 0; }
         footer { background: #222; color: #aaa; text-align: center; padding: 2rem 1rem; margin-top: 2rem; }
+        @media (max-width: 600px) { .pros-cons, .book-meta { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -54,6 +67,21 @@
             
             <p><strong>Shadow Slave</strong> by Guiltythree is one of the most popular web novels on WebNovel. With thousands of chapters and millions of readers, is it actually good? Here's my honest review after reading 1000+ chapters.</p>
             
+            <div class="book-info">
+                <h3>📚 Book Information</h3>
+                <div class="book-meta">
+                    <div><strong>Author:</strong> Guiltythree</div>
+                    <div><strong>Platform:</strong> WebNovel</div>
+                    <div><strong>Genre:</strong> Dark Fantasy, LitRPG</div>
+                    <div><strong>Status:</strong> Ongoing</div>
+                    <div><strong>Chapters:</strong> 2000+</div>
+                    <div><strong>Rating:</strong> ⭐ 4.8/5</div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a href="https://www.webnovel.com/book/shadow-slave_23144629105028505" target="_blank" rel="nofollow" class="btn">📖 Read on WebNovel</a>
+                </div>
+            </div>
+            
             <h2>What is Shadow Slave?</h2>
             <p>Sunny, a young man living in poverty, awakens as a Shadow Slave in the Dream Realm—a post-apocalyptic world where humanity fights for survival against Nightmares. Shadow Slave is the weakest class... or so everyone thinks.</p>
             
@@ -70,11 +98,11 @@
                     <h4>✅ What Works</h4>
                     <ul>
                         <li>Incredible world-building</li>
-                        <li>Unique magic system (Memories, Echoes, Shadows)</li>
+                        <li>Unique magic system</li>
                         <li>Morally complex protagonist</li>
                         <li>Genuine stakes and tension</li>
                         <li>Beautiful, sometimes poetic prose</li>
-                        <li>Slow-burn but satisfying progression</li>
+                        <li>Satisfying progression</li>
                     </ul>
                 </div>
                 <div class="cons">
@@ -94,18 +122,20 @@
                 <li><strong>Memories</strong> - Items/abilities gained from defeating enemies</li>
                 <li><strong>Echoes</strong> - Summoned creatures made from soul fragments</li>
                 <li><strong>Shadows</strong> - The protagonist's unique shadow manipulation</li>
-                <li><strong>Aspects</strong> - Each Awakened has a unique power with specific abilities</li>
+                <li><strong>Aspects</strong> - Each Awakened has a unique power</li>
             </ul>
             
-            <h2>Content Warnings</h2>
-            <p>Shadow Slave is darker than most web novels:</p>
-            <ul>
-                <li>Gore and violence</li>
-                <li>Psychological trauma</li>
-                <li>Character deaths (even important ones)</li>
-                <li>Horror elements</li>
-            </ul>
-            <p>If you want light, feel-good power fantasy, this isn't it.</p>
+            <div class="warning-box">
+                <h4>⚠️ Content Warnings</h4>
+                <p>Shadow Slave is darker than most web novels:</p>
+                <ul>
+                    <li>Gore and violence</li>
+                    <li>Psychological trauma</li>
+                    <li>Character deaths (even important ones)</li>
+                    <li>Horror elements</li>
+                </ul>
+                <p><em>If you want light, feel-good power fantasy, this isn't it.</em></p>
+            </div>
             
             <h2>Reading Experience</h2>
             <p>The first arc is survival-focused and can feel slow. Around chapter 50, the story finds its rhythm. By chapter 200, you'll be hooked. The Academy Arc and Forgotten Shore are highlights.</p>
@@ -119,12 +149,30 @@
                 <li><strong>vs Mother of Learning:</strong> Larger scope, ongoing, more world-building</li>
             </ul>
             
+            <div class="similar-books">
+                <h4>📖 Similar Books You Might Like</h4>
+                <ul>
+                    <li><strong>Mother of Learning</strong> - Time loop magic school, completed (<a href="https://www.royalroad.com/fiction/21220/mother-of-learning" target="_blank" rel="nofollow">Read on Royal Road →</a>)</li>
+                    <li><strong>The Scholomance Series</strong> - Dark magic school with real stakes</li>
+                    <li><strong>Cradle Series</strong> - Satisfying progression, completed</li>
+                    <li><strong>Defiance of the Fall</strong> - Similar WebNovel progression style</li>
+                </ul>
+            </div>
+            
             <div class="verdict">
                 <h3>🏆 Final Verdict: 4.8/5</h3>
                 <p>Shadow Slave is exceptional but not for everyone. If you enjoy dark fantasy, intricate world-building, and characters with depth, it's one of the best web novels available.</p>
                 <p><strong>Read it if:</strong> You want dark fantasy with actual stakes, beautiful prose, and mystery.</p>
                 <p><strong>Skip it if:</strong> You want light, feel-good progression or hate slow starts.</p>
             </div>
+        </article>
+        
+        <article>
+            <h2>Related Reviews</h2>
+            <ul>
+                <li><a href="/best-litrpg-novels.html">Best LitRPG Novels on Royal Road & WebNovel</a></li>
+                <li><a href="/books-like-harry-potter.html">10 Books Like Harry Potter for Fantasy Lovers</a></li>
+            </ul>
         </article>
     </div>
     
