@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelPick - Best Web Novels & Book Recommendations 2026</title>
+    <meta name="description" content="Discover the best web novels, light novels, and books. Honest reviews, curated recommendations, and 'books like' guides for every reader.">
+    <meta name="keywords" content="web novels, book recommendations, novel reviews, books like, similar books, Royal Road, WebNovel">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; background: #faf8f5; }
+        a { color: #c0392b; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        header { background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); color: white; padding: 4rem 1rem; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        
+        nav { background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        nav a { color: #8e44ad; font-weight: 500; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+        
+        .hero { text-align: center; padding: 3rem 1.5rem; background: white; border-radius: 16px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .hero h2 { font-size: 2rem; margin-bottom: 1rem; color: #333; }
+        .hero p { max-width: 650px; margin: 0 auto 1.5rem; color: #666; font-size: 1.1rem; }
+        .search-box { max-width: 500px; margin: 1.5rem auto 0; }
+        .search-box input { width: 100%; padding: 1rem; border: 2px solid #ddd; border-radius: 30px; font-size: 1rem; }
+        .search-box input:focus { outline: none; border-color: #8e44ad; }
+        
+        .section-title { font-size: 1.8rem; text-align: center; margin-bottom: 2rem; color: #333; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); margin: 0.8rem auto 0; border-radius: 2px; }
+        
+        .genres { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 3rem; }
+        .genre-tag { background: white; border: 2px solid #8e44ad; color: #8e44ad; padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: 500; cursor: pointer; transition: all 0.3s; }
+        .genre-tag:hover, .genre-tag.active { background: #8e44ad; color: white; }
+        
+        .books-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+        .book-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .book-card:hover { transform: translateY(-4px); }
+        .book-cover { height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+        .book-content { padding: 1.5rem; }
+        .book-badge { display: inline-block; background: #f39c12; color: white; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.7rem; margin-bottom: 0.5rem; }
+        .book-title { font-size: 1.3rem; margin-bottom: 0.3rem; color: #333; }
+        .book-author { color: #888; font-size: 0.9rem; margin-bottom: 0.8rem; }
+        .book-rating { color: #f39c12; margin-bottom: 0.5rem; }
+        .book-desc { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+        .book-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .tag { background: #f5f0fa; color: #8e44ad; padding: 0.2rem 0.6rem; border-radius: 6px; font-size: 0.75rem; }
+        
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; cursor: pointer; }
+        .article-card:hover { transform: translateY(-4px); text-decoration: none; }
+        .article-cover { height: 160px; background: linear-gradient(135deg, #e74c3c 0%, #8e44ad 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-content { padding: 1.5rem; }
+        .article-date { color: #999; font-size: 0.85rem; margin-bottom: 0.5rem; }
+        .article-title { font-size: 1.1rem; margin-bottom: 0.5rem; color: #333; }
+        .article-excerpt { color: #666; font-size: 0.9rem; }
+        
+        .cta { background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); color: white; text-align: center; padding: 4rem 1rem; border-radius: 16px; margin: 2rem 0; }
+        .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta p { opacity: 0.9; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .btn { display: inline-block; background: white; color: #8e44ad; padding: 0.9rem 2rem; border-radius: 30px; font-weight: 600; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); text-decoration: none; }
+        
+        footer { background: #222; color: #aaa; text-align: center; padding: 3rem 1rem; margin-top: 3rem; }
+        footer p { margin-bottom: 0.5rem; }
+        footer a { color: #c0392b; }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .books-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 NovelPick</h1>
+        <p>Discover your next favorite novel. Curated recommendations, honest reviews, and "books like" guides.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="hero" id="home">
+            <h2>Find Your Next Great Read</h2>
+            <p>Browse thousands of web novel recommendations. Whether you love LitRPG, Fantasy, Romance, or Sci-Fi – we've got you covered.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search for novels, authors, or 'books like...'">
+            </div>
+        </section>
+        
+        <section id="genres">
+            <div class="genres">
+                <span class="genre-tag active">All</span>
+                <span class="genre-tag">LitRPG</span>
+                <span class="genre-tag">Fantasy</span>
+                <span class="genre-tag">Romance</span>
+                <span class="genre-tag">Sci-Fi</span>
+                <span class="genre-tag">Xianxia</span>
+                <span class="genre-tag">Urban</span>
+            </div>
+        </section>
+        
+        <section id="recommendations">
+            <h2 class="section-title">🔥 Trending Novels</h2>
+            <div class="books-grid">
+                <article class="book-card">
+                    <div class="book-cover">📖</div>
+                    <div class="book-content">
+                        <span class="book-badge">TRENDING</span>
+                        <h3 class="book-title">Shadow Slave</h3>
+                        <p class="book-author">by Guiltythree</p>
+                        <div class="book-rating">★★★★★ 4.8/5</div>
+                        <p class="book-desc">A dark fantasy about a young man who awakens as a Shadow Slave, one of the most despised classes in a world of nightmares and monsters.</p>
+                        <div class="book-tags">
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">Action</span>
+                            <span class="tag">Dark</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="book-card">
+                    <div class="book-cover" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">🐉</div>
+                    <div class="book-content">
+                        <span class="book-badge">POPULAR</span>
+                        <h3 class="book-title">The Legendary Mechanic</h3>
+                        <p class="book-author">by Chocolion</p>
+                        <div class="book-rating">★★★★★ 4.7/5</div>
+                        <p class="book-desc">A professional gamer reincarnates into the game world 11 years before the game's launch, with all his player knowledge intact.</p>
+                        <div class="book-tags">
+                            <span class="tag">LitRPG</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="book-card">
+                    <div class="book-cover" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">⚔️</div>
+                    <div class="book-content">
+                        <h3 class="book-title">Mother of Learning</h3>
+                        <p class="book-author">by nobody103</p>
+                        <div class="book-rating">★★★★★ 4.9/5</div>
+                        <p class="book-desc">A time loop story following a mage student who must die and repeat the same month over and over to become powerful enough to save the world.</p>
+                        <div class="book-tags">
+                            <span class="tag">Time Loop</span>
+                            <span class="tag">Magic</span>
+                            <span class="tag">Completed</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section id="guides">
+            <h2 class="section-title">📚 Books Like Guides</h2>
+            <div class="articles-grid">
+                <a href="/books-like-harry-potter.html" class="article-card">
+                    <div class="article-cover">⚡</div>
+                    <div class="article-content">
+                        <div class="article-date">March 30, 2026</div>
+                        <h3 class="article-title">10 Books Like Harry Potter for Fantasy Lovers</h3>
+                        <p class="article-excerpt">If you loved the magical world of Hogwarts, here are 10 novels that capture that same sense of wonder and adventure.</p>
+                    </div>
+                </a>
+                
+                <a href="/best-litrpg-novels.html" class="article-card">
+                    <div class="article-cover" style="background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);">🎮</div>
+                    <div class="article-content">
+                        <div class="article-date">March 28, 2026</div>
+                        <h3 class="article-title">Best LitRPG Novels on Royal Road & WebNovel</h3>
+                        <p class="article-excerpt">Our top picks for LitRPG novels with great progression systems and immersive game-like worlds.</p>
+                    </div>
+                </a>
+                
+                <a href="/books-like-cradle.html" class="article-card">
+                    <div class="article-cover" style="background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);">🌟</div>
+                    <div class="article-content">
+                        <div class="article-date">March 25, 2026</div>
+                        <h3 class="article-title">Books Like Cradle: Progression Fantasy Recommendations</h3>
+                        <p class="article-excerpt">Loved Cradle's power progression? Here are novels with similar satisfying growth and epic moments.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section id="reviews">
+            <h2 class="section-title">📝 Latest Reviews</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-cover" style="background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);">📖</div>
+                    <div class="article-content">
+                        <div class="article-date">March 27, 2026</div>
+                        <h3 class="article-title">Shadow Slave Review: Is It Worth Reading?</h3>
+                        <p class="article-excerpt">Our honest take on the hit web novel – the good, the bad, and whether it's worth your time.</p>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-cover" style="background: linear-gradient(135deg, #1abc9c 0%, #3498db 100%);">⚔️</div>
+                    <div class="article-content">
+                        <div class="article-date">March 24, 2026</div>
+                        <h3 class="article-title">Defiance of the Fall vs The Rune Emperor: Which is Better?</h3>
+                        <p class="article-excerpt">A detailed comparison of two popular LitRPG series – pros, cons, and our recommendation.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <h2>Never Miss a Great Novel</h2>
+            <p>Join our newsletter for weekly novel recommendations straight to your inbox.</p>
+            <a href="#" class="btn">Get Weekly Picks →</a>
+        </section>
+    </div>
+    
+    <footer id="about">
+        <p><strong>NovelPick</strong> - Your Novel Discovery Companion</p>
+        <p>Honest reviews and curated recommendations for web novel enthusiasts.</p>
+        <p>© 2026 NovelPick. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>
