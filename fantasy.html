@@ -40,6 +40,30 @@
         .tag { background: #f3e8ff; color: #8e44ad; padding: 0.2rem 0.8rem; border-radius: 50px; font-size: 0.8rem; }
         footer { background: #222; color: #aaa; text-align: center; padding: 2rem; margin-top: 3rem; }
         footer a { color: #8e44ad; }
+    
+        .breadcrumb { color: #888; margin: 1rem 0 0; font-size: 0.9rem; }
+        .breadcrumb a { color: #8e44ad; }
+        .breadcrumb .current { color: #8e44ad; }
+        .breadcrumb .sep { margin: 0 0.3rem; color: #ccc; }
+        .page-layout { display: grid; grid-template-columns: 1fr 260px; gap: 2rem; align-items: start; max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+        .page-main { min-width: 0; }
+        .sidebar { position: sticky; top: 80px; }
+        .sidebar-widget { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.2rem; margin-bottom: 1.2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .sidebar-widget h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #8e44ad; margin-bottom: 0.8rem; border-bottom: 2px solid #f3e8ff; padding-bottom: 0.5rem; font-weight: 700; }
+        .sidebar-widget ul { list-style: none; margin: 0; padding: 0; }
+        .sidebar-widget li { margin-bottom: 0.5rem; }
+        .sidebar-widget li a { color: #555; font-size: 0.87rem; line-height: 1.4; display: block; }
+        .sidebar-widget li a:hover { color: #8e44ad; }
+        .sidebar-nav-cat { display: flex; flex-direction: column; gap: 0.3rem; }
+        .sidebar-nav-cat a { padding: 0.5rem 0.8rem; border-radius: 8px; color: #555; font-size: 0.9rem; font-weight: 500; }
+        .sidebar-nav-cat a:hover { background: rgba(142,68,173,0.1); color: #8e44ad; }
+        .sidebar-nav-cat a.active { background: #8e44ad; color: white; }
+        .related { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.5rem; margin-top: 2rem; }
+        .related h3 { color: #8e44ad; margin-top: 0; margin-bottom: 1rem; }
+        .related ul { list-style: none; margin: 0; padding: 0; }
+        .related li { margin-bottom: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid #f3e8ff; }
+        .related li:last-child { border-bottom: none; }
+        .related li a { color: #8e44ad; }
     </style>
     <meta property="og:title" content="🏰 Fantasy Novels | NovelPick">
     <meta property="og:description" content="Love Lord of the Rings? Here are 10 epic fantasy book series that will satisfy your craving for Middle-earth.">
@@ -85,6 +109,8 @@
     </nav>
     <div class="container">
         <div class="breadcrumb"><a href="/">Home</a> / Fantasy</div>
+        <span class="reading-time">📚 5 min read</span>
+        <div class="breadcrumb" style="color:#888;font-size:0.85rem;margin-top:0.3rem;">📚 Updated: April 2026</div>
         
         <h2>🌟 Editor's Picks</h2>
         <div class="book-grid">
