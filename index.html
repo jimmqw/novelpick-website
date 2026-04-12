@@ -3,323 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovelPick - Discover Your Next Favorite Book | Web Novel Recommendations</title>
-    <meta name="description" content="Discover your next favorite web novel! Expert book recommendations, honest reviews, and reading guides for LitRPG, fantasy, sci-fi, and more. Updated weekly.">
-    <meta name="keywords" content="novel recommendations, book reviews, fantasy novels, LitRPG, books like Harry Potter, web novel recommendations">
+    <title>NovelPick — Your Next Adventure Is One Book Away</title>
+    <meta name="description" content="Curated LitRPG, xianxia, and progression fantasy recommendations. Expert book lists, honest reviews, and reading guides — updated weekly.">
+    <meta name="keywords" content="novel recommendations, LitRPG, xianxia, fantasy novels, progression fantasy, web novel recommendations">
     <link rel="canonical" href="https://novelpick.top/">
-    <meta property="og:title" content="NovelPick - Discover Your Next Favorite Book">
-    <meta property="og:description" content="Expert web novel recommendations for LitRPG, fantasy, sci-fi readers. Honest reviews and reading guides updated weekly.">
+    <meta property="og:title" content="NovelPick — Your Next Adventure Is One Book Away">
+    <meta property="og:description" content="Curated LitRPG, xianxia, and progression fantasy recommendations. Expert book lists and reading guides.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://novelpick.top/">
     <meta property="og:site_name" content="NovelPick">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NovelPick - Discover Your Next Favorite Book">
-    <meta name="twitter:description" content="Expert web novel recommendations for LitRPG, fantasy, sci-fi readers.">
     <meta property="og:image" content="https://novelpick.top/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; color: #333; background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%); min-height: 100vh; }
-        a { color: #8e44ad; text-decoration: none; }
-        header { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); color: white; padding: 4rem 1rem; text-align: center; }
-        header h1 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-        header p { font-size: 1.2rem; opacity: 0.95; max-width: 600px; margin: 0 auto; }
-        header .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.3rem 1rem; border-radius: 50px; font-size: 0.9rem; margin-bottom: 1rem; }
-        nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 1rem; position: sticky; top: 0; z-index: 100; border-radius: 0 0 20px 20px; }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-        nav a { color: #8e44ad; font-weight: 600; padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.3s; }
-        nav a:hover, nav a.active { background: #8e44ad; color: white; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(255,255,255,0.2); }
-        .section-header h2 { font-size: 1.5rem; color: white; }
-        .section-header .view-all { color: #f39c12; font-weight: 500; font-size: 0.95rem; }
-        .section-header .view-all:hover { text-decoration: underline; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
-        .card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.15); transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 25px 70px rgba(0,0,0,0.25); }
-        .card-header { padding: 1.5rem; }
-        .card-header h3 { font-size: 1.15rem; margin-bottom: 0.3rem; line-height: 1.4; color: white; }
-        .card-header h3 a { color: white; }
-        .card-header h3 a:hover { opacity: 0.9; }
-        .card-body { padding: 1.5rem; }
-        .card-body p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; }
-        .card-body .read-more { display: inline-block; color: white; font-weight: 600; padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.9rem; transition: transform 0.3s; }
-        .card-body .read-more:hover { transform: scale(1.05); }
-        .tag { display: inline-block; background: #f3e8ff; color: #8e44ad; padding: 0.15rem 0.6rem; border-radius: 50px; font-size: 0.75rem; margin-right: 0.3rem; }
-        .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; margin: 2rem 0; }
-        .cat-card { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.5rem; text-align: center; color: white; transition: transform 0.3s, background 0.3s; }
-        .cat-card:hover { transform: translateY(-3px); background: rgba(255,255,255,0.25); }
-        .cat-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
-        .cat-card p { font-size: 0.85rem; opacity: 0.9; }
-        footer { background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color: white; text-align: center; padding: 2rem; margin-top: 3rem; border-radius: 20px 20px 0 0; }
-        footer p { opacity: 0.9; }
-        footer a { color: #c084fc; }
-        @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            .grid { grid-template-columns: 1fr; }
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --bg:#0d0a14;
+            --bg2:#130e20;
+            --bg3:#1a1230;
+            --lavender:#c9a0dc;
+            --lavender-dim:rgba(201,160,220,.1);
+            --lavender-border:rgba(201,160,220,.15);
+            --rose:#f0a0b0;
+            --text:#d4c5e0;
+            --text-dim:rgba(201,160,220,.55);
+            --border:rgba(201,160,220,.12);
+            --card-bg:#130e20;
         }
-    
-        .breadcrumb { color: #888; margin: 1rem 0 0; font-size: 0.9rem; }
-        .breadcrumb a { color: #8e44ad; }
-        .breadcrumb .current { color: #8e44ad; }
-        .breadcrumb .sep { margin: 0 0.3rem; color: #ccc; }
-        .page-layout { display: grid; grid-template-columns: 1fr 220px; gap: 2rem; align-items: start; max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
-        .page-main { min-width: 0; }
-        .sidebar { position: sticky; top: 80px; }
-        .sidebar-widget { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.2rem; margin-bottom: 1.2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .sidebar-widget h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #8e44ad; margin-bottom: 0.8rem; border-bottom: 2px solid #f3e8ff; padding-bottom: 0.5rem; font-weight: 700; }
-        .sidebar-widget ul { list-style: none; margin: 0; padding: 0; }
-        .sidebar-widget li { margin-bottom: 0.5rem; }
-        .sidebar-widget li a { color: #555; font-size: 0.87rem; line-height: 1.4; display: block; }
-        .sidebar-widget li a:hover { color: #8e44ad; }
-        .sidebar-nav-cat { display: flex; flex-direction: column; gap: 0.3rem; }
-        .sidebar-nav-cat a { padding: 0.5rem 0.8rem; border-radius: 8px; color: #555; font-size: 0.9rem; font-weight: 500; }
-        .sidebar-nav-cat a:hover { background: rgba(142,68,173,0.1); color: #8e44ad; }
-        .sidebar-nav-cat a.active { background: #8e44ad; color: white; }
-        .related { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.5rem; margin-top: 2rem; }
-        .related h3 { color: #8e44ad; margin-top: 0; margin-bottom: 1rem; }
-        .related ul { list-style: none; margin: 0; padding: 0; }
-        .related li { margin-bottom: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid #f3e8ff; }
-        .related li:last-child { border-bottom: none; }
-        .related li a { color: #8e44ad; }
-    
-        .article-layout{display:grid;grid-template-columns: 1fr 220px;gap:2rem;align-items:start;max-width:1100px;margin:0 auto;padding:2rem 1rem}
-        .article-main{min-width:0}
-        .sidebar{position:sticky;top:80px}
-        .sidebar-widget{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-radius:16px;padding:1.2rem;margin-bottom:1.2rem;box-shadow:0 4px 20px rgba(0,0,0,0.08)}
-        .sidebar-widget h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;color:#8e44ad;margin-bottom:0.8rem;border-bottom:2px solid #f3e8ff;padding-bottom:0.5rem;font-weight:700}
-        .sidebar-widget ul{list-style:none;margin:0;padding:0}
-        .sidebar-widget li{margin-bottom:0.5rem}
-        .sidebar-widget li a{color:#555;font-size:0.87rem;line-height:1.4;display:block}
-        .sidebar-widget li a:hover{color:#8e44ad}
-        .sidebar-nav-cat{display:flex;flex-direction:column;gap:0.3rem}
-        .sidebar-nav-cat a{padding:0.5rem 0.8rem;border-radius:8px;color:#555;font-size:0.9rem;font-weight:500}
-        .sidebar-nav-cat a:hover{background:rgba(142,68,173,0.1);color:#8e44ad}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+        a{color:var(--lavender);text-decoration:none;transition:color .2s}
+        a:hover{color:var(--rose)}
+        h1,h2,h3{font-family:'Playfair Display',serif}
+
+        /* ── NAV ── */
+        nav{position:sticky;top:0;z-index:100;background:rgba(13,10,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.75rem 0}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+        .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--lavender);letter-spacing:-.02em;font-style:italic;display:flex;align-items:center;gap:.3rem}
+        .nav-logo span{color:var(--rose);font-style:normal}
+        .nav-links{display:flex;gap:.25rem;flex-wrap:wrap;list-style:none}
+        .nav-links a{display:block;padding:.45rem .85rem;border-radius:8px;font-size:.88rem;font-weight:500;color:var(--text-dim);transition:all .2s;border:1px solid transparent}
+        .nav-links a:hover,.nav-links a.active{color:var(--lavender);background:var(--lavender-dim);border-color:var(--border)}
+
+        /* ── HERO ── */
+        .hero{min-height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 1.5rem 3rem;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(201,160,220,.06) 0%,transparent 70%);pointer-events:none}
+        .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(240,160,176,.04) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(201,160,220,.04) 0%,transparent 50%);pointer-events:none}
+        .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--lavender-dim);border:1px solid var(--lavender-border);color:var(--lavender);padding:.35rem 1rem;border-radius:50px;font-size:.8rem;font-weight:600;margin-bottom:1.8rem;animation:fadeInUp .6s ease both}
+        .hero-badge .sparkle{color:var(--rose)}
+        .hero h1{font-size:clamp(2rem,4.5vw,3.6rem);font-weight:800;color:#fff;line-height:1.15;max-width:800px;margin-bottom:1.2rem;animation:fadeInUp .6s .1s ease both}
+        .hero h1 em{font-style:italic;color:var(--lavender)}
+        .hero p{font-size:1.1rem;color:var(--text-dim);max-width:540px;margin-bottom:2.5rem;animation:fadeInUp .6s .2s ease both}
+        .hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;animation:fadeInUp .6s .3s ease both}
+        .btn-primary{display:inline-flex;align-items:center;gap:.4rem;background:var(--lavender);color:#0d0a14;font-weight:700;padding:.7rem 1.6rem;border-radius:10px;font-size:.95rem;transition:all .2s}
+        .btn-primary:hover{background:#fff;color:#0d0a14;transform:translateY(-1px)}
+        .btn-secondary{display:inline-flex;align-items:center;gap:.4rem;background:transparent;color:var(--lavender);font-weight:600;padding:.65rem 1.5rem;border-radius:10px;border:1.5px solid var(--border);font-size:.95rem;transition:all .2s}
+        .btn-secondary:hover{background:var(--lavender-dim);border-color:var(--lavender)}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+        /* ── MAIN CONTAINER ── */
+        .container{max-width:1200px;margin:0 auto;padding:0 1.5rem 4rem}
+
+        /* ── SECTION HEADERS ── */
+        .section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.8rem;padding-bottom:.8rem;border-bottom:1px solid var(--border)}
+        .section-header h2{font-size:1.35rem;font-weight:700;color:#fff;font-family:'Playfair Display',serif;display:flex;align-items:center;gap:.5rem}
+        .section-header h2::before{content:'✦';color:var(--rose);font-size:.8em;flex-shrink:0}
+        .view-all{font-size:.88rem;color:var(--lavender);font-weight:600;display:flex;align-items:center;gap:.25rem;opacity:.8;transition:opacity .2s}
+        .view-all:hover{opacity:1}
+
+        /* ── GRID ── */
+        .grid{display:grid;gap:1.2rem}
+        .grid-3{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+        .grid-4{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+        .grid-8{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+
+        /* ── TRENDING STRIP ── */
+        .trending-strip{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:3rem;padding:1.2rem 0}
+        .trend-chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--lavender-dim);border:1px solid var(--lavender-border);color:var(--text);padding:.45rem 1rem;border-radius:50px;font-size:.85rem;font-weight:500;transition:all .2s}
+        .trend-chip:hover{background:rgba(201,160,220,.2);border-color:var(--lavender);color:#fff;transform:translateY(-1px)}
+        .trend-chip .fire{color:var(--rose)}
+
+        /* ── TOP PICKS ── */
+        .top-card{background:linear-gradient(135deg,var(--bg3) 0%,var(--bg2) 100%);border:1px solid var(--border);border-radius:16px;padding:2rem;transition:all .25s;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:.8rem}
+        .top-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--lavender),var(--rose));opacity:0;transition:opacity .25s}
+        .top-card:hover{transform:translateY(-4px);border-color:rgba(201,160,220,.35);box-shadow:0 20px 60px rgba(201,160,220,.1)}
+        .top-card:hover::before{opacity:1}
+        .top-card .genre-tag{display:inline-flex;align-items:center;background:rgba(201,160,220,.1);color:var(--lavender);border:1px solid rgba(201,160,220,.2);padding:.15rem .7rem;border-radius:5px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;width:fit-content}
+        .top-card h3{font-size:1.2rem;font-weight:800;color:#fff;line-height:1.3}
+        .top-card h3 a{color:inherit}
+        .top-card h3 a:hover{color:var(--lavender)}
+        .top-card p{color:var(--text-dim);font-size:.88rem;line-height:1.65;flex-grow:1}
+        .top-card .book-meta{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--text-dim)}
+        .top-card .rating{color:var(--rose);font-weight:700}
+
+        /* ── CARDS ── */
+        .card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:1.5rem;transition:all .25s;position:relative;overflow:hidden}
+        .card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--lavender),var(--rose));transform:scaleX(0);transition:transform .25s;transform-origin:left}
+        .card:hover{transform:translateY(-3px);border-color:rgba(201,160,220,.3);box-shadow:0 12px 40px rgba(201,160,220,.07)}
+        .card:hover::before{transform:scaleX(1)}
+        .card h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.5rem;line-height:1.35;font-family:'Playfair Display',serif}
+        .card h3 a{color:inherit}
+        .card h3 a:hover{color:var(--lavender)}
+        .card p{color:var(--text-dim);font-size:.88rem;line-height:1.65;margin-bottom:.8rem}
+        .card-tag{display:inline-block;background:rgba(201,160,220,.07);color:var(--lavender);border:1px solid rgba(201,160,220,.15);padding:.12rem .5rem;border-radius:4px;font-size:.7rem;font-weight:600;margin-right:.2rem;margin-bottom:.2rem;text-transform:uppercase}
+        .read-more{display:inline-flex;align-items:center;gap:.3rem;font-size:.85rem;font-weight:600;color:var(--lavender);transition:gap .2s}
+        .read-more:hover{color:var(--rose);gap:.6rem}
+
+        /* ── GENRE CARDS ── */
+        .genre-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1.3rem 1rem;text-align:center;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:.4rem}
+        .genre-card:hover{transform:translateY(-2px);border-color:rgba(201,160,220,.3);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+        .genre-card .genre-icon{font-size:1.5rem;margin-bottom:.2rem}
+        .genre-card h3{font-size:.92rem;font-weight:700;color:#fff;font-family:'Playfair Display',serif}
+        .genre-card p{font-size:.75rem;color:var(--text-dim)}
+
+        /* ── CTA SECTION ── */
+        .cta-section{background:linear-gradient(135deg,var(--bg3) 0%,rgba(201,160,220,.05) 100%);border:1px solid rgba(201,160,220,.12);border-radius:20px;padding:3rem 2rem;text-align:center;margin-top:1rem;position:relative;overflow:hidden}
+        .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 100%,rgba(240,160,176,.06) 0%,transparent 70%);pointer-events:none}
+        .cta-section h2{font-size:1.8rem;font-weight:800;color:#fff;font-family:'Playfair Display',serif;margin-bottom:.8rem}
+        .cta-section h2 em{color:var(--rose);font-style:italic}
+        .cta-section p{color:var(--text-dim);font-size:1rem;max-width:500px;margin:0 auto 1.8rem}
+
+        /* ── FOOTER ── */
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto}
+        .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem}
+        .footer-links a{color:var(--text-dim);font-size:.88rem;transition:color .2s}
+        .footer-links a:hover{color:var(--lavender)}
+        .footer-copy{color:var(--text-dim);font-size:.82rem;opacity:.6}
+
+        /* ── RESPONSIVE ── */
+        @media(max-width:768px){
+            .hero h1{font-size:2rem}
+            .hero{padding:3.5rem 1rem 2rem;min-height:auto}
+            .grid-8{grid-template-columns:repeat(4,1fr)}
+        }
+        @media(max-width:500px){
+            .grid-4,.grid-8{grid-template-columns:repeat(2,1fr)}
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="badge">📚 Web Novel Recommendations</div>
-        <h1>NovelPick</h1>
-        <p>Discover your next favorite book. Expert recommendations and honest reviews for web novel readers.</p>
-    </header>
     <nav>
-        <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/litrpg.html">LitRPG</a></li>
-            <li><a href="/fantasy.html">Fantasy</a></li>
-            <li><a href="/scifi.html">Sci-Fi</a></li>
-            <li><a href="/romance.html">Romance</a></li>
-            <li><a href="/reviews.html">Reviews</a></li>
-        </ul>
-    </nav>
-    <div class="breadcrumb"><a href="/">Home</a><span class="sep"> / </span><span class="current">Home</span></div>
-        <span class="reading-time">📚 1 min read</span>
-    <div class="article-layout"><div class="article-main">
-
-        <div class="section">
-            <div class="cat-grid">
-                <a href="/litrpg.html" class="cat-card">
-                    <h3>⚔️ LitRPG</h3>
-                    <p>12 guides</p>
-                </a>
-                <a href="/fantasy.html" class="cat-card">
-                    <h3>🏰 Fantasy</h3>
-                    <p>10 guides</p>
-                </a>
-                <a href="/scifi.html" class="cat-card">
-                    <h3>🚀 Sci-Fi</h3>
-                    <p>8 guides</p>
-                </a>
-                <a href="/romance.html" class="cat-card">
-                    <h3>💕 Romance</h3>
-                    <p>5 guides</p>
-                </a>
-                <a href="/reviews.html" class="cat-card">
-                    <h3>�?Reviews</h3>
-                    <p>2 reviews</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-header">
-                <h2>🔥 New This Week</h2>
-                <a href="/litrpg.html" class="view-all">View all �?/a>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%);">
-                        <h3><a href="/books-like-cradle.html">10 Books Like Cradle Series</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Love Cradle by Will Wight? Mage Errant, Dungeon Crawler Carl, Iron Prince, and 7 more progression fantasy novels that hit the same spots.</p>
-                        <span class="tag">Progression</span><span class="tag">LitRPG</span>
-                        <br><br>
-                        <a href="/books-like-cradle.html" class="read-more" style="background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%);">Read Guide �?/a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">
-                        <h3><a href="/best-germinator-novels.html">Best Germinator & Evolution Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Mutation, evolution, and transformation. Top novels featuring characters who evolve into increasingly powerful forms �?slime to dragon, mushroom to apex.</p>
-                        <span class="tag">Evolution</span><span class="tag">Mutation</span>
-                        <br><br>
-                        <a href="/best-germinator-novels.html" class="read-more" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">Read Guide �?/a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-header">
-                <h2>⚔️ LitRPG & Progression Fantasy</h2>
-                <a href="/litrpg.html" class="view-all">View all LitRPG �?/a>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #2c3e50 0%, #4a00e0 100%);">
-                        <h3><a href="/best-litrpg-novels.html">Best LitRPG Novels 2026</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Top fantasy and gaming novels blending RPG elements with epic storytelling. Royal Road, WebNovel, and Kindle Unlimited picks.</p>
-                        <span class="tag">LitRPG</span><span class="tag">Top Picks</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
-                        <h3><a href="/solo-leveling-inspired-novels.html">Solo Leveling Inspired Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Weak to strong protagonists, epic dungeon raids, satisfying power growth. Top novels inspired by Solo Leveling.</p>
-                        <span class="tag">Solo Leveling</span><span class="tag">Dungeon</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);">
-                        <h3><a href="/best-progression-fantasy-novels.html">Best Progression Fantasy Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Watch characters grow stronger with clear power systems. The best progression fantasy with satisfying advancement arcs.</p>
-                        <span class="tag">Progression</span><span class="tag">Fantasy</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
-                        <h3><a href="/shadow-slave-vs-legendary-mechanic.html">Shadow Slave vs The Legendary Mechanic</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Dark fantasy survival vs sci-fi power fantasy. Two titans of LitRPG compared side by side.</p>
-                        <span class="tag">Comparison</span><span class="tag">LitRPG</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-header">
-                <h2>🏰 Epic Fantasy</h2>
-                <a href="/fantasy.html" class="view-all">View all Fantasy �?/a>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">
-                        <h3><a href="/books-like-lord-of-the-rings.html">10 Fantasy Series Like Lord of the Rings</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Love Lord of the Rings? Here are 10 epic fantasy book series that will satisfy your craving for Middle-earth adventures.</p>
-                        <span class="tag">Epic Fantasy</span><span class="tag">High Fantasy</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
-                        <h3><a href="/books-like-harry-potter.html">10 Books Like Harry Potter</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Looking for magic after Hogwarts? These books capture the same wonder and adventure for adult and YA readers.</p>
-                        <span class="tag">YA Fantasy</span><span class="tag">Magic</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
-                        <h3><a href="/books-like-mistborn.html">Books Like Mistborn</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Love Brandon Sanderson's unique magic systems? Try these epic fantasy novels with intricate powers and world-building.</p>
-                        <span class="tag">Sanderson</span><span class="tag">Magic Systems</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
-                        <h3><a href="/best-dark-fantasy-novels.html">Best Dark Fantasy Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Grim, gritty, and utterly gripping. The best dark fantasy novels for mature readers who want something beyond classic hero journeys.</p>
-                        <span class="tag">Dark Fantasy</span><span class="tag">Mature</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-header">
-                <h2>🚀 Science Fiction</h2>
-                <a href="/scifi.html" class="view-all">View all Sci-Fi �?/a>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #0c2461 0%, #3a7bd5 100%);">
-                        <h3><a href="/best-space-opera-novels.html">Best Space Opera Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Epic galactic adventures, interstellar empires, and cosmic-scale storytelling. Top space opera recommendations.</p>
-                        <span class="tag">Space Opera</span><span class="tag">Epic</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">
-                        <h3><a href="/best-apocalypse-and-survival-novels.html">Best Apocalypse & Survival Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>End of the world scenarios, survival stories, and post-apocalyptic adventures. Gripping reads for fans of The Walking Dead and more.</p>
-                        <span class="tag">Apocalypse</span><span class="tag">Survival</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);">
-                        <h3><a href="/best-cyberpunk-novels.html">Best Cyberpunk Novels</a></h3>
-                    </div>
-                    <div class="card-body">
-                        <p>High tech, low life. The best cyberpunk novels exploring dystopian futures, transhumanism, and corporate dominance.</p>
-                        <span class="tag">Cyberpunk</span><span class="tag">Dystopian</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div></div>
-<aside class="sidebar">
-<div class="sidebar-widget"><h4>Categories</h4><div class="sidebar-nav-cat"><a href="/">Home</a><a href="/litrpg.html">LitRPG</a><a href="/fantasy.html">Fantasy</a><a href="/scifi.html">Sci-Fi</a><a href="/romance.html">Romance</a><a href="/reviews.html">Reviews</a></div></div>
-<div class="sidebar-widget"><h4>Popular</h4><ul><li><a href="/best-solo-leveling-novels.html">Best Solo Leveling Novels</a></li><li><a href="/best-apocalypse-and-survival-novels.html">Best Apocalypse & Survival</a></li><li><a href="/best-enemies-to-lovers-romance-novels.html">Best Enemies-to-Lovers</a></li><li><a href="/books-like-cradle.html">Books Like Cradle</a></li></ul></div>
-</aside></div>
-    
-        <div class="related">
-            <h3>Keep Reading</h3>
-            <ul>
-<li><a href="/best-solo-leveling-novels.html">Best Solo Leveling Novels</a><span>Top Korean web novels</span></li>
-<li><a href="/best-progression-fantasy-novels.html">Best Progression Fantasy Novels</a><span>Cradle, Defiance and more</span></li>
-<li><a href="/books-like-cradle.html">Books Like Cradle</a><span>Best progression fantasy</span></li>
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Novel<span>Pick</span></a>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/fantasy.html">Fantasy</a></li>
+                <li><a href="/litrpg.html">LitRPG</a></li>
+                <li><a href="/scifi.html">Sci-Fi</a></li>
+                <li><a href="/romance.html">Romance</a></li>
+                <li><a href="/reviews.html">Reviews</a></li>
             </ul>
         </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge"><span class="sparkle">✦</span> Updated weekly with new picks</div>
+        <h1>Your Next Adventure Is <em>One Book Away</em></h1>
+        <p>Curated LitRPG, xianxia, and progression fantasy recommendations. No algorithms — just expert picks you'll actually love.</p>
+        <div class="hero-actions">
+            <a href="/litrpg.html" class="btn-primary">Explore LitRPG →</a>
+            <a href="/fantasy.html" class="btn-secondary">Browse Fantasy</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- TRENDING -->
+        <div class="trending-strip">
+            <a href="/books-like-cradle.html" class="trend-chip"><span class="fire">🔥</span> Books Like Cradle</a>
+            <a href="/litrpg.html" class="trend-chip"><span class="fire">⚔️</span> Best LitRPG 2026</a>
+            <a href="/best-xianxia-cultivation-novels.html" class="trend-chip"><span class="fire">☁️</span> Xianxia Picks</a>
+            <a href="/solo-leveling-inspired-novels.html" class="trend-chip"><span class="fire">🗡️</span> Solo Leveling Inspired</a>
+            <a href="/best-reincarnation-novels.html" class="trend-chip"><span class="fire">🔄</span> Reincarnation Favs</a>
+            <a href="/best-time-loop-web-novels-2026.html" class="trend-chip"><span class="fire">⏳</span> Time Loop</a>
+        </div>
+
+        <!-- TOP PICKS -->
+        <div class="section-header">
+            <h2>Top Picks This Month</h2>
+            <a href="/litrpg.html" class="view-all">View all →</a>
+        </div>
+        <div class="grid grid-3" style="margin-bottom:3rem">
+            <div class="top-card">
+                <span class="genre-tag">☁️ Xianxia</span>
+                <h3><a href="/best-xianxia-cultivation-novels.html">Best Xianxia & Cultivation Novels</a></h3>
+                <p>Cradle, Reverend Insanity, I Shall Seal the Heavens — the definitive cultivation novel reading list for 2026.</p>
+                <div class="book-meta"><span class="rating">★★★★★</span> <span>8 novels</span></div>
+            </div>
+            <div class="top-card">
+                <span class="genre-tag">⚔️ LitRPG</span>
+                <h3><a href="/best-litrpg-novels.html">Best LitRPG Novels 2026</a></h3>
+                <p>Dungeon Crawler Carl, He Who Fights With Monsters, and the best gaming-meets-fantasy novels of the year.</p>
+                <div class="book-meta"><span class="rating">★★★★★</span> <span>12 novels</span></div>
+            </div>
+            <div class="top-card">
+                <span class="genre-tag">🗡️ Solo Leveling</span>
+                <h3><a href="/solo-leveling-inspired-novels.html">Solo Leveling Inspired Novels</a></h3>
+                <p>Weak-to-strong protagonists, epic dungeon raids, and satisfying power growth. Top novels in the Solo Leveling style.</p>
+                <div class="book-meta"><span class="rating">★★★★★</span> <span>10 novels</span></div>
+            </div>
+        </div>
+
+        <!-- GENRE CARDS -->
+        <div class="section-header">
+            <h2>Browse by Genre</h2>
+        </div>
+        <div class="grid grid-8" style="margin-bottom:3rem">
+            <a href="/litrpg.html" class="genre-card">
+                <span class="genre-icon">⚔️</span>
+                <h3>LitRPG</h3>
+                <p>12 guides</p>
+            </a>
+            <a href="/best-xianxia-cultivation-novels.html" class="genre-card">
+                <span class="genre-icon">☁️</span>
+                <h3>Xianxia</h3>
+                <p>8 guides</p>
+            </a>
+            <a href="/scifi.html" class="genre-card">
+                <span class="genre-icon">🚀</span>
+                <h3>Sci-Fi</h3>
+                <p>10 guides</p>
+            </a>
+            <a href="/fantasy.html" class="genre-card">
+                <span class="genre-icon">🏰</span>
+                <h3>Epic Fantasy</h3>
+                <p>9 guides</p>
+            </a>
+            <a href="/best-dark-fantasy-novels.html" class="genre-card">
+                <span class="genre-icon">🌑</span>
+                <h3>Dark Fantasy</h3>
+                <p>6 guides</p>
+            </a>
+            <a href="/romance.html" class="genre-card">
+                <span class="genre-icon">💕</span>
+                <h3>Romance</h3>
+                <p>5 guides</p>
+            </a>
+            <a href="/best-time-loop-web-novels-2026.html" class="genre-card">
+                <span class="genre-icon">⏳</span>
+                <h3>Time Loop</h3>
+                <p>4 guides</p>
+            </a>
+            <a href="/best-reincarnation-novels.html" class="genre-card">
+                <span class="genre-icon">🔄</span>
+                <h3>Reincarnation</h3>
+                <p>5 guides</p>
+            </a>
+        </div>
+
+        <!-- LITRPG SECTION -->
+        <div class="section-header">
+            <h2>LitRPG & Progression Fantasy</h2>
+            <a href="/litrpg.html" class="view-all">View all →</a>
+        </div>
+        <div class="grid grid-4" style="margin-bottom:3rem">
+            <div class="card">
+                <h3><a href="/best-progression-fantasy-novels.html">Best Progression Fantasy</a></h3>
+                <p>Watch characters grow stronger with clear power systems. The best progression fantasy with satisfying advancement arcs.</p>
+                <span class="card-tag">Progression</span><span class="card-tag">Fantasy</span>
+                <a href="/best-progression-fantasy-novels.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/shadow-slave-vs-legendary-mechanic.html">Shadow Slave vs Legendary Mechanic</a></h3>
+                <p>Dark fantasy survival vs sci-fi power fantasy. Two titans of LitRPG compared side by side.</p>
+                <span class="card-tag">Comparison</span><span class="card-tag">LitRPG</span>
+                <a href="/shadow-slave-vs-legendary-mechanic.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/books-like-cradle.html">Books Like Cradle</a></h3>
+                <p>Mage Errant, Dungeon Crawler Carl, Iron Prince, and 7 more progression fantasy novels that hit the same spots as Cradle.</p>
+                <span class="card-tag">Progression</span><span class="card-tag">LitRPG</span>
+                <a href="/books-like-cradle.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-germinator-novels.html">Best Evolution & Germinator Novels</a></h3>
+                <p>Mutation, evolution, and transformation. Top novels featuring characters who evolve into increasingly powerful forms.</p>
+                <span class="card-tag">Evolution</span><span class="card-tag">Mutation</span>
+                <a href="/best-germinator-novels.html" class="read-more">Read more →</a>
+            </div>
+        </div>
+
+        <!-- EPIC FANTASY SECTION -->
+        <div class="section-header">
+            <h2>Epic Fantasy</h2>
+            <a href="/fantasy.html" class="view-all">View all →</a>
+        </div>
+        <div class="grid grid-4" style="margin-bottom:3rem">
+            <div class="card">
+                <h3><a href="/books-like-lord-of-the-rings.html">Books Like Lord of the Rings</a></h3>
+                <p>Love Lord of the Rings? Here are 10 epic fantasy book series that will satisfy your craving for Middle-earth adventures.</p>
+                <span class="card-tag">Epic Fantasy</span><span class="card-tag">High Fantasy</span>
+                <a href="/books-like-lord-of-the-rings.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/books-like-harry-potter.html">Books Like Harry Potter</a></h3>
+                <p>Looking for magic after Hogwarts? These books capture the same wonder and adventure for adult and YA readers.</p>
+                <span class="card-tag">YA Fantasy</span><span class="card-tag">Magic</span>
+                <a href="/books-like-harry-potter.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-dark-fantasy-novels.html">Best Dark Fantasy Novels</a></h3>
+                <p>Grim, gritty, and utterly gripping. The best dark fantasy novels for mature readers who want something beyond classic hero journeys.</p>
+                <span class="card-tag">Dark Fantasy</span><span class="card-tag">Mature</span>
+                <a href="/best-dark-fantasy-novels.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-cozy-fantasy-novels.html">Best Cozy Fantasy Novels</a></h3>
+                <p>Warm, comforting fantasy reads with lower stakes and higher vibes. Perfect for reading with a cup of tea.</p>
+                <span class="card-tag">Cozy</span><span class="card-tag">Fantasy</span>
+                <a href="/best-cozy-fantasy-novels.html" class="read-more">Read more →</a>
+            </div>
+        </div>
+
+        <!-- SCI-FI SECTION -->
+        <div class="section-header">
+            <h2>Science Fiction</h2>
+            <a href="/scifi.html" class="view-all">View all →</a>
+        </div>
+        <div class="grid grid-4" style="margin-bottom:3rem">
+            <div class="card">
+                <h3><a href="/best-space-opera-novels.html">Best Space Opera Novels</a></h3>
+                <p>Epic galactic adventures, interstellar empires, and cosmic-scale storytelling. Top space opera recommendations for 2026.</p>
+                <span class="card-tag">Space Opera</span><span class="card-tag">Epic</span>
+                <a href="/best-space-opera-novels.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-apocalypse-and-survival-novels.html">Best Apocalypse & Survival Novels</a></h3>
+                <p>End of the world scenarios, survival stories, and post-apocalyptic adventures. Gripping reads for fans of The Walking Dead.</p>
+                <span class="card-tag">Apocalypse</span><span class="card-tag">Survival</span>
+                <a href="/best-apocalypse-and-survival-novels.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-cyberpunk-novels.html">Best Cyberpunk Novels</a></h3>
+                <p>High tech, low life. The best cyberpunk novels exploring dystopian futures, transhumanism, and corporate dominance.</p>
+                <span class="card-tag">Cyberpunk</span><span class="card-tag">Dystopian</span>
+                <a href="/best-cyberpunk-novels.html" class="read-more">Read more →</a>
+            </div>
+            <div class="card">
+                <h3><a href="/best-system-apocalypse-novels.html">Best System Apocalypse Novels</a></h3>
+                <p>When a game system becomes reality. Top system apocalypse novels with game-like progression mechanics.</p>
+                <span class="card-tag">System</span><span class="card-tag">Apocalypse</span>
+                <a href="/best-system-apocalypse-novels.html" class="read-more">Read more →</a>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Can't Decide? Let Us <em>Help</em></h2>
+            <p>Browse our complete library of curated novel recommendations across every genre, or check our top picks to start your next adventure.</p>
+            <a href="/litrpg.html" class="btn-primary">Browse LitRPG →</a>
+        </div>
+    </div>
+
     <footer>
-        <p><a href="/">NovelPick</a> | <a href="/litrpg.html">LitRPG</a> | <a href="/fantasy.html">Fantasy</a> | <a href="/scifi.html">Sci-Fi</a> | <a href="/romance.html">Romance</a> | <a href="/reviews.html">Reviews</a></p>
-        <p>© 2026 NovelPick. All rights reserved.</p>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/fantasy.html">Fantasy</a>
+                <a href="/litrpg.html">LitRPG</a>
+                <a href="/scifi.html">Sci-Fi</a>
+                <a href="/romance.html">Romance</a>
+                <a href="/reviews.html">Reviews</a>
+            </div>
+            <p class="footer-copy">© 2026 NovelPick. All rights reserved.</p>
+        </div>
     </footer>
+
 <script>
-var _hmt = _hmt || [];
-(function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?d6d20fb609876081e0de8872c69e39aa"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?d6d20fb609876081e0de8872c69e39aa";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();
 </script>
 </body>
 </html>
