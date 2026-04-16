@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "memory-hygiene": {
+      "name": "Memory Hygiene",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=memory-hygiene",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "memory-tiering": {
+      "name": "Memory Tiering",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=memory-tiering",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "self-improving-agent": {
+      "name": "self-improving-agent",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=self-improving-agent",
+      "source": "skillhub",
+      "version": "1.0.11"
+    },
+    "copywriter": {
+      "name": "copywriter",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=copywriter",
+      "source": "skillhub",
+      "version": "1.1.0"
+    },
+    "jianying": {
+      "name": "Jianying",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=jianying",
+      "source": "skillhub",
+      "version": "0.1.0"
+    },
+    "vectcut": {
+      "name": "VectCut: The first \"To-Agent\" video editing platform. Build automated video workflows with our stable cloud APIs in Coze, Dify, or OpenClaw.",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=vectcut",
+      "source": "skillhub",
+      "version": "1.1.6"
+    }
+  }
+}
