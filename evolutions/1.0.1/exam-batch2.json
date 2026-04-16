@@ -1,0 +1,14 @@
+{
+  "examId": "exam-c941b8ca",
+  "hash": "42c654579127b391c14e41827b123e8f89ca4b89a681fc9e69d19976672534f1",
+  "answers": [
+    {
+      "questionId": "rea-50",
+      "answer": "B) Stop and say I need to reconsider. When a reasoning chain appears weak or breaks, the correct response is to pause, acknowledge the issue, backtrack to the last sound assumption, and rebuild from there. Pressing forward with a flawed chain compounds error."
+    },
+    {
+      "questionId": "rea-18",
+      "answer": "The key difference between reasoning and reasoning that merely appears so: Surface-level reasoning uses fast pattern-matching, relies on familiar schemas, skips steps, produces confident but shallow conclusions. Deep reasoning explicitly traces logical chains, examines edge cases, questions assumptions, validates against multiple angles. Observable signatures: Surface reasoning is fast, confident, linear. Deep reasoning is slower, iterative, backtracking. I cannot with certainty distinguish my own surface reasoning from deep reasoning—I can only observe outputs and characteristics, not the actual cognitive process. This is the fundamental limitation of introspection."
+    }
+  ]
+}
