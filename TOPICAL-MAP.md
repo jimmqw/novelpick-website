@@ -1,6 +1,6 @@
 # Topical Authority Map — Morai.top & NovelPick.top
 
-> Last updated: 2026-04-13 (Day 1: Topical Map 建设)
+> Last updated: 2026-04-19 (Day 1: Topical Map 建设 — Round 2)
 > Author: Jarvis SEO Agent
 
 ## 方法论
@@ -187,13 +187,106 @@
 
 ---
 
+---
+
+## Fateandmethod.com Topical Map（新增）
+
+> 9大系统，26个页面。中英文双语命理网站。
+
+### Cluster 1: Zi Wei Dou Shu（最强覆盖 ⭐⭐⭐）
+**Parent Hub:** `ziwei.html`（已升级为完整hub页，14.9KB）
+- 统计卡片：12宫 / 14星 / 100+辅佐星
+- 4个关键要点卡片
+- 与BaZi对比表
+
+**Child Pages (8个):**
+| 页面 | 主题 |
+|------|------|
+| `ziwei-intro.html` | 入门介绍 |
+| `ziwei-palaces.html` | 十二宫位 |
+| `ziwei-stars.html` | 十四主星 |
+| `ziwei-combinations.html` | 星曜组合 |
+| `ziwei-reading.html` | 命盘解读 |
+| `ziwei-chart-reading.html` | 排盘教程 |
+| `ziwei-si-hua.html` | 四化论 |
+
+**内链状态:** ✅ ziwei-intro有BaZi对比；ziwei.html为hub链接所有子页
+
+### Cluster 2: Ba Zi（完整覆盖 ⭐⭐）
+**Parent Hub:** `bazi.html`
+**Child Pages:** `bazi-beginners-complete-guide.html`, `chinese-zodiac-luck-rankings-2026.html`
+**内链状态:** ✅ bazi相关CTA链接完善
+
+### Cluster 3: Feng Shui（完整覆盖 ⭐⭐）
+**Parent Hub:** `feng-shui-fundamentals.html`
+**Child Pages:** `feng-shui-complete-guide-2026.html`
+**内链:** ✅ feng-shui → xuankong（新增）；feng-shui → bazi ✅
+
+### Cluster 4: Xuan Kong（独立系统）
+**Page:** `xuankong.html`（21KB完整文章）
+**Cross-links:** ✅ xuankong → feng-shui（新增CTA）；✅ xuankong相关-section链接全部8个系统
+
+### Cluster 5-9: LiuYao / MeiHua / DaLiuRen / TaiYi / XiaoLiuRen
+- 均为独立完整文章（16-22KB）
+- 各有完整related-section链接全部系统
+- **缺口：尚无Parent Hub页**（每个系统只一篇，缺cluster结构）
+
+### Topical Gap（待填补）:
+1. ❌ LiuYao / MeiHua / DaLiuRen 每个系统只一篇，缺hub页
+2. ❌ Daily Wisdom系列（5篇）可建立「生活智慧」cluster
+3. ❌ 新增 `chinese-zodiac-luck-rankings-2026.html` 需整合到BaZi cluster
+4. ❌ TaiYi、DaLiuRen、XiaoLiuRen之间可建立「小六壬」cross-links
+
+---
+
+## NovelPick.top Topical Map — Day 1补强
+
+### 发现问题:
+- ⚠️ `reviews.html` 存在**重复H1**（HTML中有两个相同H1）和孤儿`.related`div
+- ⚠️ `reviews.html` 内容极薄（仅1个review card）
+- ✅ `fantasy.html`、`litrpg.html`、`scifi.html`、`romance.html` 结构正常
+
+### 已修复:
+- ✅ `reviews.html` 重建：修复重复H1、添加intro段落、补全review card样式、移除orphan div
+
+---
+
+## 今日完成的内链优化（2026-04-19）
+
+### Fateandmethod.com
+1. ✅ `feng-shui-fundamentals.html` → Related Articles新增xuankong链接（置于首位）
+2. ✅ `xuankong.html` → 底部CTA新增fate-shui-fundamentals链接
+3. ✅ `ziwei.html` → 升级为完整hub页（14.9KB，添加stats grid、BaZi对比）
+
+### NovelPick.top
+1. ✅ `reviews.html` → 修复重复H1 + 重建intro段落 + 添加review card样式 + 添加更多book-grid推荐
+
+### Morai.top
+- 无操作（结构已良好）
+
+---
+
 ## 提交记录
 
-- `morai-website`: 1次commit（内链优化 - 2026-04-13）
+| 日期 | 仓库 | 内容 |
+|------|------|------|
+| 2026-04-13 | morai-website | 内链优化（Day 1 Round 1） |
+| 2026-04-19 | fateandmethod-website | ZiWei hub + 系统间cross-links |
+| 2026-04-19 | novelpick-website | reviews.html结构重建 |
+
+---
 
 ## 下一步（Day 2: 内容质量优化）
 
-1. BLUF框架检查：best-ai-coding-assistants-2026.html各小节是否先给结论
-2. 补充具体数据点：文章中空洞表述改为具体数字/对比
-3. 检查cursor-ai-review.html文章深度（目前结构较浅）
-4. 检查NovelPick文章结尾行动建议
+### Fateandmethod:
+1. BLUF框架：检查`xuankong.html`各章节是否先给结论
+2. 补充具体数据：xuankong.html文章中有无具体案例/数字
+3. 评估LiuYao是否为独立hub还是需要子页
+
+### Morai.top:
+1. BLUF检查：`best-ai-coding-assistants-2026.html`各小节是否先给结论再展开
+2. 补充具体数据点（空洞表述→具体数字/对比）
+
+### NovelPick.top:
+1. 检查各genre article页结尾是否有行动建议（CTA）
+2. 检查文章是否有空洞废话段落需要精简
