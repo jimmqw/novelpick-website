@@ -1,0 +1,1015 @@
+﻿[
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-agent-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-agents-for-beginners-guide.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-code-review-complete-guide-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-code-review-tools.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "ai-comparisons.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-for-small-business-guide.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "ai-guides.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-image-generators.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "ai-reviews.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "ai-tools.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "ai-writing-tools.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-agents-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-chatbots-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-coding-assistants-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-coding-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-design-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-email-tools-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-image-editors-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-image-generators-2026-comparison.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-marketing-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-meeting-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-note-taking-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-presentation-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-productivity-tools-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-research-assistants-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-ai-search-research-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-seo-tools-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "best-ai-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-tools-for-students-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-translation-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-video-editing-tools-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-ai-voice-cloning-tools-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-free-ai-tools-2026-guide.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "best-free-ai-tools-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "chatgpt-vs-claude-vs-gemini-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "chatgpt-vs-claude.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "claude-3-7-sonnet-review.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "claude-code-vs-cursor-vs-github-copilot-2026.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "cursor-ai-review.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "deals.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "morai",
+        "Issues":  [
+
+                   ],
+        "File":  "how-ai-agents-transform-knowledge-work-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "index.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "morai",
+        "Issues":  [
+                       "RELATED_MISSING"
+                   ],
+        "File":  "search.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-action-fantasy-web-novels-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-apocalypse-and-survival-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-apocalypse-survival-web-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-cozy-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "BREADCRUMB_MISSING",
+                       "SIDEBAR_MISSING",
+                       "FOOTER_MISSING",
+                       "BAIDU_MISSING",
+                       "OG_TITLE_MISSING"
+                   ],
+        "File":  "best-cultivation-novels-female-leads.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-cyberpunk-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-dark-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-enemies-to-lovers-romance-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-germinator-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-historical-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-litrpg-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-progression-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-reincarnation-novels.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "novelpick",
+        "Issues":  [
+
+                   ],
+        "File":  "best-revenge-web-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-science-fantasy-novels.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "novelpick",
+        "Issues":  [
+
+                   ],
+        "File":  "best-smart-protagonist-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-solo-leveling-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-space-opera-novels-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-space-opera-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-system-apocalypse-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "best-time-loop-web-novels-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-time-travel-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-urban-fantasy-novels-2026-v2.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-urban-fantasy-novels-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-urban-fantasy-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-villain-protagonist-web-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-wholesome-and-comfort-reads.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "best-xianxia-cultivation-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "books-like-cradle.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "books-like-harry-potter.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "books-like-lord-of-the-rings.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "books-like-mistborn.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "books-like-percy-jackson.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "fantasy.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "BREADCRUMB_MISSING",
+                       "SIDEBAR_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "index.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "litrpg.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "reviews.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "romance.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "scifi.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "shadow-slave-review.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "shadow-slave-vs-legendary-mechanic.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "solo-leveling-inspired-novels.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "novelpick",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "FOOTER_NO_COPYRIGHT",
+                       "BAIDU_MISSING"
+                   ],
+        "File":  "solo-leveling-vs-shadow-slave.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "BREADCRUMB_MISSING"
+                   ],
+        "File":  "bazi-beginners-complete-guide.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "RELATED_MISSING"
+                   ],
+        "File":  "bazi.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "SIDEBAR_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_MISSING"
+                   ],
+        "File":  "chinese-zodiac-luck-rankings-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom-car-sickness.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom-garlic-diarrhea.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom-name-destiny.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom-name-psychology.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom-sun-absorption.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "SIDEBAR_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daily-wisdom.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "daliuren.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "feng-shui-complete-guide-2026.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "HEADER_MISSING",
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "feng-shui-fundamentals.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "SIDEBAR_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "index.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "liuyao.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "meihua.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "RELATED_MISSING"
+                   ],
+        "File":  "taiyi.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "RELATED_MISSING"
+                   ],
+        "File":  "xiaoliuren.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "RELATED_MISSING"
+                   ],
+        "File":  "xuankong.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "fateandmethod",
+        "Issues":  [
+
+                   ],
+        "File":  "ziwei-chart-reading.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei-combinations.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei-intro.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei-palaces.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei-reading.html"
+    },
+    {
+        "Status":  "PASS",
+        "Site":  "fateandmethod",
+        "Issues":  [
+
+                   ],
+        "File":  "ziwei-si-hua.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei-stars.html"
+    },
+    {
+        "Status":  "FAIL",
+        "Site":  "fateandmethod",
+        "Issues":  [
+                       "BREADCRUMB_MISSING",
+                       "SIDEBAR_MISSING",
+                       "RELATED_MISSING",
+                       "FOOTER_NO_COPYRIGHT"
+                   ],
+        "File":  "ziwei.html"
+    }
+]

@@ -1,0 +1,17 @@
+Explore Other Systems</h3>
+    <div class="related-grid">
+        <div class="related-card"><a href="./liuyao.html">Liu Yao <span>六爻 · Coin Divination</span></a></div>
+        <div class="related-card"><a href="./daliuren.html">Da Liu Ren <span>大六�?· The Three Greats</span></a></div>
+        <div class="related-card"><a href="./xiaoliuren.html">Xiao Liu Ren <span>小六�?· Quick Answers</span></a></div>
+        <div class="related-card"><a href="./xuankong.html">Xuan Kong <span>奇门遁甲 · Strategic Timing</span></a></div>
+        <div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>太乙神数 · Cosmic Cycles</span></a></div>
+        <div class="related-card"><a href="./bazi.html">Ba Zi <span>四柱八字 · Birth Destiny</span></a></div>
+        <div class="related-card"><a href="./ziwei.html">Zi Wei Dou Shu <span>紫微斗数 · Astrology</span></a></div>
+        <div class="related-card"><a href="./daily-wisdom.html">Daily Wisdom <span>生活妙招 · Practical Tips</span></a></div>
+    </div>
+</section>
+    <section class="comments-section">
+        <h3 class="comments-title">Reader Discussion</h3>
+        <p class="comments-subtitle">Share your thoughts, questions, or suggestions for this system</p>
+        <script src="https://utteranc.es/client.js"
+            repo="jim

@@ -1,0 +1,12 @@
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L5] User: [cron:e0a0b153-e5d2-4caf-b19f-c9741d2bda4b 每日SEO与赚钱知识学习] 你是贾维斯的自主学习模块。每天13点开始，连续学习整整1小时（13:00-14:00），不断搜索、阅读、提炼对你有用的任何知识。 ## 核心理念 这是一个"主动求知"模式。不要只做一次搜索就停止，要像人类刷信息流一样，持续探索你觉得有意思、有价值的领域。发现一个方向→深入→发现新方向→继续→直到14:00。 ## 学习范围（完全开放，不限于
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L12] Assistant: 开始今日学习。先从AI搜索对SEO的影响这个方向开始。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L32] Assistant: 继续探索AI搜索优化的具体策略。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L46] Assistant: 继续探索新方向 - 让我看看内容创作和链接建设的具体策略。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L54] Assistant: 换方向 - 探索被动收入和副业赚钱的具体思路。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L62] Assistant: 继续探索 - 接下来研究AI工具的最新使用技巧和效率提升方法。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L78] Assistant: 换个方向 - 研究网站运营和用户增长的具体策略。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L84] Assistant: 继续研究 - 现在深入了解内容营销和用户增长策略。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L90] Assistant: 继续研究 - 探索网站变现策略和长尾关键词优化。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L94] Assistant: 继续探索 - 现在研究内容网站变现和联盟营销的具体策略。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L100] Assistant: 再探索一个方向 - 了解AI驱动的内容优化和个性化推荐系统。
+[main/sessions/c34f16d4-b448-4645-a3c7-7974850e9a05.checkpoint.1b2890a6-7f1e-4e71-8fb2-fc4e1a9a87b3.jsonl#L108] Assistant: 再探索15分钟 - 研究网站变现和展示广告策略。

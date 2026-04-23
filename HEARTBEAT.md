@@ -1,7 +1,25 @@
-# HEARTBEAT.md Template
+# HEARTBEAT.md - 主动预检清单
 
-```markdown
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 每日习惯（每次心跳轮检）
 
-# Add tasks below when you want the agent to check something periodically.
-```
+### 1. 今日任务检查
+- [ ] 打开MEMORY.md检查"今日任务"区
+- [ ] 确认3篇文章是否已发布
+- [ ] 检查cron任务失败状态（上次失败是否需要重试）
+
+### 2. 待办预判
+- [ ] 想想还有什么没做
+- [ ] 主动预判下一步需要做什么
+- [ ] 主动预判主人可能需要什么信息
+
+### 3. 自愈错误处理
+- [ ] 检查上次执行失败的任务
+- [ ] 如果是网络/文件问题，尝试自动重试
+- [ ] 如果失败超过2次，标记并报告主人
+
+### 4. 主动汇报
+- [ ] 如果有任务刚完成，主动汇报结果
+
+## 轮检周期
+- 每2-3个心跳检查一次今日任务
+- 不需要回复时只说 "HEARTBEAT_OK"
