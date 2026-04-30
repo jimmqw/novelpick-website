@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelPick — Best Web Novels 2026 | Curated Recommendations Across Every Genre</title>
+    <meta name="description" content="Discover the best web novels of 2026. Expert-curated recommendations across cultivation, LitRPG, romance, sci-fi, progression fantasy, and more. Hand-picked reads reviewed with care.">
+    <meta property="og:title" content="NovelPick — Best Web Novels 2026 | Curated Recommendations">
+    <meta property="og:description" content="Expert-curated web novel recommendations across every genre. Cultivation, LitRPG, romance, sci-fi, and more — hand-picked reads reviewed with care.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novelpick.top/">
+    <meta property="og:site_name" content="NovelPick">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://novelpick.top/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0d0a14; --bg-secondary: #13101c; --bg-card: #1a1526; --bg-card-hover: #1f1a2e;
+            --text-primary: #f0e6ff; --text-secondary: #b8a9d4; --text-muted: #7a6d94;
+            --accent-lavender: #c9a0dc; --accent-rose: #f0a0b0; --accent-gold: #e8c84a;
+            --border: #2a1f3a; --radius: 12px; --max-width: 1100px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-primary); color: var(--text-secondary); line-height: 1.75; min-height: 100vh; }
+        h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; color: var(--text-primary); line-height: 1.3; }
+        a { color: var(--accent-lavender); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-rose); }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,10,20,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+        .nav-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; }
+        .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--accent-lavender); }
+        .nav-logo span { color: var(--accent-rose); }
+        .nav-links { display: flex; gap: 2px; }
+        .nav-links a { padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); transition: all 0.2s; }
+        .nav-links a:hover, .nav-links a.active { background: rgba(201,160,220,0.1); color: var(--accent-lavender); }
+
+        /* Hero */
+        .hero { text-align: center; padding: 100px 24px 72px; background: linear-gradient(180deg, rgba(201,160,220,0.08) 0%, transparent 100%); border-bottom: 1px solid var(--border); }
+        .hero .eyebrow { font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-rose); margin-bottom: 20px; }
+        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.01em; }
+        .hero h1 span { color: var(--accent-lavender); }
+        .hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 650px; margin: 0 auto 32px; }
+        .hero .stats { display: flex; justify-content: center; gap: 48px; }
+        .hero .stat { text-align: center; }
+        .hero .stat .num { display: block; font-size: 1.8rem; font-weight: 700; color: var(--accent-gold); font-family: 'Playfair Display', serif; }
+        .hero .stat .label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+        main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px 64px; }
+
+        /* Category Grid */
+        .section-header { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; }
+        .section-header h2 { font-size: 1.6rem; font-weight: 700; white-space: nowrap; }
+        .section-header .line { flex: 1; height: 1px; background: var(--border); }
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 12px; }
+        .cat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; transition: all 0.25s; }
+        .cat-card:hover { background: var(--bg-card-hover); border-color: var(--accent-lavender); transform: translateY(-3px); }
+        .cat-card .icon { font-size: 2.2rem; margin-bottom: 12px; }
+        .cat-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+        .cat-card p { font-size: 0.82rem; color: var(--text-muted); }
+
+        /* Article Grid */
+        .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .article-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all 0.25s; }
+        .article-card:hover { border-color: var(--accent-lavender); background: var(--bg-card-hover); transform: translateY(-2px); }
+        .article-card .tag { display: inline-block; background: rgba(201,160,220,0.15); color: var(--accent-lavender); padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        .article-card h3 a { color: var(--text-primary); font-size: 1.1rem; }
+        .article-card h3 a:hover { color: var(--accent-rose); }
+        .article-card p { font-size: 0.88rem; color: var(--text-secondary); margin: 8px 0 12px; line-height: 1.6; }
+        .article-card .meta { font-size: 0.8rem; color: var(--text-muted); display: flex; gap: 12px; }
+        .article-card.featured { grid-column: 1 / -1; display: flex; gap: 24px; align-items: center; background: linear-gradient(135deg, rgba(201,160,220,0.1), rgba(240,160,176,0.05)); border-color: rgba(201,160,220,0.25); padding: 32px; }
+        .article-card.featured .featured-content { flex: 1; }
+        .article-card.featured .featured-badge { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-rose); margin-bottom: 8px; font-weight: 600; }
+        .article-card.featured h3 a { font-size: 1.4rem; }
+
+        /* Newsletter CTA */
+        .cta-box { background: linear-gradient(135deg, rgba(201,160,220,0.1), rgba(240,160,176,0.06)); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; text-align: center; margin-top: 48px; }
+        .cta-box h2 { font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-lavender); }
+        .cta-box p { color: var(--text-secondary); max-width: 500px; margin: 0 auto 20px; }
+        .cta-box .cta-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .cta-box .cta-links a { background: var(--bg-card); padding: 10px 24px; border-radius: 24px; font-size: 0.92rem; border: 1px solid var(--border); transition: all 0.2s; font-weight: 500; }
+        .cta-box .cta-links a:hover { border-color: var(--accent-lavender); background: rgba(201,160,220,0.12); }
+
+        .footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 32px 24px 24px; background: var(--bg-secondary); text-align: center; }
+        .footer p { font-size: 0.85rem; color: var(--text-muted); }
+        .footer a { color: var(--accent-lavender); }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .stats { gap: 24px; }
+            .article-grid { grid-template-columns: 1fr; }
+            .article-card.featured { flex-direction: column; }
+            .nav-links { display: none; }
+            .cat-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d6d20fb609876081e0de8872c69e39aa";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">Novel<span>Pick</span></a>
+        <div class="nav-links">
+            <a href="/" class="active">Home</a>
+            <a href="/category/fantasy.html">Fantasy</a>
+            <a href="/category/litrpg.html">LitRPG</a>
+            <a href="/category/sci-fi.html">Sci-Fi</a>
+            <a href="/category/romance.html">Romance</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <p class="eyebrow">Curated Web Novel Recommendations</p>
+    <h1>Find Your Next <span>Great Read</span></h1>
+    <p>We hand-pick the best web novels across cultivation, LitRPG, romance, sci-fi, and progression fantasy. No algorithm — just careful curation from readers who care.</p>
+    <div class="stats">
+        <div class="stat"><span class="num">10</span><span class="label">Curated Guides</span></div>
+        <div class="stat"><span class="num">5</span><span class="label">Genre Hubs</span></div>
+        <div class="stat"><span class="num">100+</span><span class="label">Novels Reviewed</span></div>
+    </div>
+</header>
+
+<main>
+    <!-- Browse by Genre -->
+    <div class="section-header"><h2>Browse by Genre</h2><div class="line"></div></div>
+    <div class="cat-grid">
+        <a href="/category/fantasy.html" class="cat-card">
+            <div class="icon">🏰</div>
+            <h3>Fantasy</h3>
+            <p>Cultivation, magic academies, epic worlds</p>
+        </a>
+        <a href="/category/litrpg.html" class="cat-card">
+            <div class="icon">🎮</div>
+            <h3>LitRPG</h3>
+            <p>Leveling systems, game worlds, stat progression</p>
+        </a>
+        <a href="/category/progression.html" class="cat-card">
+            <div class="icon">📈</div>
+            <h3>Progression</h3>
+            <p>Power growth, realm advancement, skill trees</p>
+        </a>
+        <a href="/category/sci-fi.html" class="cat-card">
+            <div class="icon">🚀</div>
+            <h3>Sci-Fi</h3>
+            <p>Space opera, cyberpunk, alien civilizations</p>
+        </a>
+        <a href="/category/romance.html" class="cat-card">
+            <div class="icon">💕</div>
+            <h3>Romance</h3>
+            <p>Love stories, slow burns, emotional journeys</p>
+        </a>
+    </div>
+
+    <!-- Latest Articles -->
+    <div class="section-header"><h2>Latest Recommendations</h2><div class="line"></div></div>
+    <div class="article-grid">
+        <div class="article-card featured">
+            <div class="featured-content">
+                <div class="featured-badge">⭐ Editor's Pick</div>
+                <h3><a href="/best-cultivation-novels-2026.html">Best Xianxia & Cultivation Web Novels 2026</a></h3>
+                <p>The 10 best xianxia and cultivation web novels every fan needs to read. From classics like Coiling Dragon to hidden gems — handpicked and ranked with detailed reviews.</p>
+                <div class="meta">
+                    <span>📅 Apr 22, 2026</span>
+                    <span>🕐 12 min read</span>
+                    <span>⭐ Curated list</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">LitRPG · GameLit</span>
+            <h3><a href="/best-system-apocalypse-web-novels-2026.html">Best System Apocalypse Web Novels 2026</a></h3>
+            <p>When the world ends and the System arrives — the best LitRPG apocalypse novels where humanity levels up to survive.</p>
+            <div class="meta"><span>📅 Apr 29, 2026</span><span>🕐 14 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Progression Fantasy</span>
+            <h3><a href="/best-slice-of-life-web-novels-2026.html">Best Slice of Life Web Novels 2026</a></h3>
+            <p>Slow-burn progression meets everyday charm. Cozy reads where crafting, farming, and small adventures steal the show.</p>
+            <div class="meta"><span>📅 Apr 29, 2026</span><span>🕐 11 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Academy · Magic</span>
+            <h3><a href="/best-magic-academy-web-novels-2026.html">Best Magic Academy Web Novels 2026</a></h3>
+            <p>Top magic school novels where students rise from first-years to archmages. Elemental mastery, forbidden arts, and campus intrigue.</p>
+            <div class="meta"><span>📅 Apr 27, 2026</span><span>🕐 15 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Time Travel</span>
+            <h3><a href="/best-time-travel-web-novels-2026.html">Best Time Travel Web Novels 2026</a></h3>
+            <p>Second chances, alternate timelines, and knowledge is power. The best web novels where protagonists rewrite history.</p>
+            <div class="meta"><span>📅 Apr 25, 2026</span><span>🕐 13 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Romance</span>
+            <h3><a href="/top-romance-web-novels-2026.html">Top Romance Web Novels 2026</a></h3>
+            <p>From slow-burn love to passionate sagas — the best romance web novels across platforms. Hand-picked for emotional depth and chemistry.</p>
+            <div class="meta"><span>📅 Apr 23, 2026</span><span>🕐 12 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Reincarnation</span>
+            <h3><a href="/best-reincarnation-web-novels-2026.html">Best Reincarnation Web Novels 2026</a></h3>
+            <p>Reborn with memories intact — the best reincarnation web novels where past lives fuel new destinies.</p>
+            <div class="meta"><span>📅 Apr 22, 2026</span><span>🕐 11 min read</span></div>
+        </div>
+
+        <div class="article-card">
+            <span class="tag">Comparison</span>
+            <h3><a href="/books-like-solo-leveling.html">15 Books Like Solo Leveling</a></h3>
+            <p>Finished Solo Leveling and craving more? These 15 web novels capture the same thrill of a weak-to-strong protagonist leveling up in a monster-filled world.</p>
+            <div class="meta"><span>📅 Apr 15, 2026</span><span>🕐 10 min read</span></div>
+        </div>
+
+        <a href="/category/fantasy.html" class="article-card" style="display:flex;align-items:center;justify-content:center;min-height:200px;text-align:center;">
+            <div><span class="tag">More →</span><h3 style="color:var(--accent-lavender);margin-top:12px;">Browse All Genres</h3><p>Explore fantasy, LitRPG, sci-fi, romance &amp; more</p></div>
+        </a>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box">
+        <h2>Never Miss a Great Read</h2>
+        <p>We're constantly adding new curated guides. Bookmark NovelPick and check back for fresh recommendations across web novel platforms.</p>
+        <div class="cta-links">
+            <a href="/about.html">About NovelPick</a>
+            <a href="/category/progression.html">Progression Fantasy</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 NovelPick. Hand-picked web novel recommendations. <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a></p>
+</footer>
+</body>
+</html>
