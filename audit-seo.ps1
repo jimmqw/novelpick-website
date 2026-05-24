@@ -16,8 +16,8 @@ function audit-file {
         $issues += "MISSING viewport meta"
     }
 
-    # Canonical
-    if ($content -notmatch 'rel=["\']canonical["\']') {
+    # Canonical (handles both quoted and unquoted: rel="canonical" and rel=canonical)
+    if ($content -notmatch 'rel=["\x27]?canonical') {
         $issues += "MISSING canonical"
     }
 
