@@ -17,7 +17,7 @@ function audit-file {
     }
 
     # Canonical
-    if ($content -notmatch 'rel="canonical"') {
+    if ($content -notmatch 'rel=["\']canonical["\']') {
         $issues += "MISSING canonical"
     }
 
