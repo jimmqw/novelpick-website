@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BaZi — Four Pillars of Destiny Analysis | Fate and Method</title>
+<meta name="description" content="Master BaZi (八字), the ancient Chinese system of destiny analysis. Calculate your Four Pillars from birth time and understand your Ten Gods, luck cycles, and life path.">
+<link rel="canonical" href="https://fateandmethod.com/bazi.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e8e4dc;font-family:Inter,sans-serif;line-height:1.8;min-height:100vh}
+a{color:#c9a84c;text-decoration:none}a:hover{color:#e8d090}
+.site-nav{background:rgba(10,10,15,0.96);border-bottom:1px solid rgba(201,168,76,0.12);padding:1rem 2rem;position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
+.site-nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.site-nav .logo{font-size:1.15rem;font-weight:700;color:#c9a84c;letter-spacing:0.1em;text-transform:uppercase}
+.site-nav ul{list-style:none;display:flex;gap:1.5rem;flex-wrap:wrap}
+.site-nav ul li a{color:#8a8070;font-size:0.82rem;transition:color 0.2s}
+.site-nav ul li a:hover,.site-nav ul li a.active{color:#c9a84c}
+.breadcrumb{max-width:1100px;margin:1.5rem auto 0;padding:0 2rem;font-size:0.8rem;color:#6a6050}
+.breadcrumb a{color:#8a8070}.breadcrumb a:hover{color:#c9a84c}.breadcrumb span{margin:0 0.4rem}
+.page-header{padding:3rem 2rem 2rem;text-align:center;background:linear-gradient(180deg,rgba(201,168,76,0.08) 0%,transparent 100%)}
+.page-header .icon{font-size:3rem;margin-bottom:1rem}
+.page-header h1{font-size:2.4rem;font-weight:700;color:#f5f0e5;margin-bottom:0.75rem}
+.page-header .subtitle{font-size:1.05rem;color:#9a9080;font-style:italic;max-width:600px;margin:0 auto 1rem}
+.page-header .chinese{color:#c9a84c;font-size:1.1rem;margin-bottom:0.5rem;letter-spacing:0.05em}
+.content{max-width:860px;margin:0 auto;padding:2rem}
+.article-body p{margin-bottom:1.5rem;color:#c8c4b8;font-size:1rem;line-height:1.85}
+.article-body h2{font-size:1.3rem;font-weight:700;color:#c9a84c;margin:2.5rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(201,168,76,0.12)}
+.article-body h3{font-size:1.05rem;font-weight:700;color:#e8d090;margin:1.5rem 0 0.75rem}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.5rem 0}
+.card{background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:1.25rem 1.5rem}
+.card h3{color:#c9a84c;font-size:1rem;font-weight:700;margin:0 0 0.5rem}
+.card p{color:#b0a898;font-size:0.88rem;margin:0;line-height:1.6}
+.callout{background:linear-gradient(135deg,rgba(201,168,76,0.08) 0%,rgba(201,168,76,0.03) 100%);border:1px solid rgba(201,168,76,0.15);border-radius:10px;padding:1.5rem 1.75rem;margin:2rem 0}
+.callout h4{color:#c9a84c;margin:0 0 0.75rem;font-size:1rem}
+.callout p{margin:0;color:#b8b4a8;font-size:0.95rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
+.step{background:rgba(201,168,76,0.03);border:1px solid rgba(201,168,76,0.1);border-radius:6px;padding:1rem 1.25rem;text-align:center}
+.step .step-num{font-size:1.5rem;font-weight:800;color:#c9a84c;margin-bottom:0.25rem}
+.step .step-label{color:#8a8070;font-size:0.85rem}
+.site-footer{background:#050508;border-top:1px solid rgba(201,168,76,0.08);padding:2rem;text-align:center;color:#4a4540;font-size:0.82rem;margin-top:3rem}
+@media(max-width:700px){.site-nav ul{display:none}.page-header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a href="/" class="logo">Fate & Method</a>
+    <ul>
+      <li><a href="/ziwei.html">Ziwei</a></li>
+      <li><a href="/liuyao.html">Liuyao</a></li>
+      <li><a href="/meihua.html">Meihua</a></li>
+      <li><a href="/daliuren.html">Daliuren</a></li>
+      <li><a href="/xuankong.html">Xuankong</a></li>
+      <li><a href="/taiyi.html">Taiyi</a></li>
+      <li><a href="/xiaoliuren.html">Xiaoliuren</a></li>
+      <li><a href="/bazi.html" class="active">BaZi</a></li>
+      <li><a href="/daily-wisdom.html">Daily Wisdom</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="breadcrumb"><a href="/">Home</a><span>/</span>BaZi Analysis</div>
+
+<header class="page-header">
+  <div class="icon">📖</div>
+  <div class="chinese">八字 · Four Pillars of Destiny</div>
+  <h1>BaZi — Four Pillars of Destiny</h1>
+  <p class="subtitle">The foundational system of Chinese destiny analysis — calculate your Four Pillars from birth year, month, day, and hour, and understand the Ten Gods that shape your life.</p>
+</header>
+
+<div class="content">
+<div class="article-body">
+
+<p>BaZi (八字, "Eight Characters") is the most widely practiced system of Chinese metaphysics. Using your exact birth year, month, day, and hour — each expressed as a Heavenly Stem and Earthly Branch — a BaZi reader constructs a chart with <strong>eight characters</strong> that describe your personality, strengths, weaknesses, career tendencies, relationship patterns, and the timing of life opportunities across decades.</p>
+
+<p>Unlike Western astrology, which maps you to one of twelve signs, BaZi maps you to a precise combination of five elements (Wood, Fire, Earth, Metal, Water), Yin/Yang balance, and a set of energetic forces called the <strong>Ten Gods</strong> — a rich symbolic language that produces remarkably specific and recognizable portraits of real people.</p>
+
+<h2>The Four Pillars</h2>
+
+<p>Your BaZi chart is built from four pillars — each representing a dimension of your birth moment:</p>
+
+<div class="cards-grid">
+  <div class="card">
+    <h3>Year Pillar</h3>
+    <p>Represents your ancestral lineage, early childhood environment, and the generational context you were born into. The branch of your year pillar is your zodiac animal.</p>
+  </div>
+  <div class="card">
+    <h3>Month Pillar</h3>
+    <p>The month pillar is the most influential in your chart — it shapes your core personality, career direction, and how you navigate the world. The month branch is your "inner zodiac."</p>
+  </div>
+  <div class="card">
+    <h3>Day Pillar</h3>
+    <p>The day pillar contains your Day Master — the core of your identity and the reference point for all Ten Gods calculations. It represents your core self and visible public identity.</p>
+  </div>
+  <div class="card">
+    <h3>Hour Pillar</h3>
+    <p>The hour pillar reveals your inner life, private self, and the legacy you leave behind. It also represents children, subordinates, and the final chapter of your life story.</p>
+  </div>
+</div>
+
+<h2>How BaZi Works</h2>
+
+<p>The Ten Gods emerge from the relationship between your Day Master and the other seven characters in your chart. Each of the ten gods represents a distinct energetic archetype:</p>
+
+<div class="callout">
+  <h4>The Ten Gods: Your Personal Energetic Profile</h4>
+  <p>Your BaZi chart's balance of Ten Gods reveals your natural tendencies: strong Resource gods mean support and education; strong Wealth gods mean financial ambition; strong Officer gods mean leadership drive; strong Output gods mean creative expression. The interplay between these energies across your luck cycles determines the timing and nature of life events.</p>
+</div>
+
+<h2>The Five Elements</h2>
+
+<p>Every BaZi character has a fundamental element: Wood, Fire, Earth, Metal, or Water. Your chart's elemental composition — how much of each element is present — describes your natural tendencies, compatible environments, and areas where you may face challenges:</p>
+
+<ul>
+  <li><strong>Wood:</strong> Growth, creativity, flexibility, vision — associated with Spring energy</li>
+  <li><strong>Fire:</strong> Passion, energy, ambition, warmth — associated with Summer energy</li>
+  <li><strong>Earth:</strong> Stability, nurturing, practicality, groundedness — associated with late-Summer transition</li>
+  <li><strong>Metal:</strong> Precision, structure, clarity, resilience — associated with Autumn energy</li>
+  <li><strong>Water:</strong> Wisdom, adaptability, flow, curiosity — associated with Winter energy</li>
+</ul>
+
+<p>A balanced chart has all five elements represented, though typically in unequal proportions. Extreme imbalances — too much or too little of any element — create both strengths and challenges that BaZi practitioners learn to work with through timing optimization, feng shui, and life strategy.</p>
+
+<h2>Luck Cycles: The Timing of Your Life</h2>
+
+<p>BaZi's most distinctive feature is its ability to predict <strong>when</strong> events will occur. Your chart operates across a series of 10-year luck cycles (大限, da xian), each governed by a different pillar energy. During some periods, your chart's favorable elements are active and opportunities flow; during others, challenging energies dominate. Understanding your luck cycles allows you to time major decisions — career changes, investments, relocations, marriages — for maximum alignment.</p>
+
+<h2>What BaZi Reveals</h2>
+
+<div class="cards-grid">
+  <div class="card">
+    <h3>Personality & Character</h3>
+    <p>Your natural strengths, weaknesses, communication style, and emotional patterns.</p>
+  </div>
+  <div class="card">
+    <h3>Career Direction</h3>
+    <p>Which industries, roles, and environments suit your elemental makeup and Ten God configuration.</p>
+  </div>
+  <div class="card">
+    <h3>Relationship Patterns</h3>
+    <p>What you need in partnerships, your relationship style, and the nature of your spouse.</p>
+  </div>
+  <div class="card">
+    <h3>Financial Trajectory</h3>
+    <p>How you make and manage money, your wealth potential, and financial risk tolerance.</p>
+  </div>
+  <div class="card">
+    <h3>Health Tendencies</h3>
+    <p>Which body systems and life periods carry health vulnerability and require attention.</p>
+  </div>
+  <div class="card">
+    <h3>Luck Cycle Timing</h3>
+    <p>Which decades are your high-potential periods and which require careful navigation.</p>
+  </div>
+</div>
+
+<h2>Getting Your BaZi Reading</h2>
+
+<p>A BaZi reading requires your exact birth time (year, month, day, and hour in the Chinese calendar) and ideally your location of birth for timezone accuracy. The more precise the time — especially the hour — the more accurate the reading, since the hour pillar is the most granular slice of the chart.</p>
+
+<div class="callout">
+  <h4>BaZi and the Ten Gods</h4>
+  <p>If you have already read our <a href="/bazi-ten-gods-guide.html" style="color:#c9a84c;">BaZi Ten Gods Guide</a>, you understand the ten energetic archetypes. The BaZi system places these gods in a temporal framework that reveals not just who you are, but when each energy will be most active in your life — the key insight that makes BaZi uniquely powerful for life planning.</p>
+</div>
+
+<p>Our BaZi articles provide foundational knowledge for understanding your own chart. For a full personalized reading including luck cycle analysis and specific timing guidance, consult a qualified BaZi practitioner — or use our guides to develop your own reading ability.</p>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <p>© 2026 FateAndMethod.com — Chinese Metaphysics & Divination · All rights reserved.</p>
+</footer>
+
+</body>
+</html>

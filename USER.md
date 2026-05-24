@@ -36,7 +36,7 @@
 ### fateandmethod.com（玄学英文站）
 - **主题：** 奢华深黑（#0a0a0f），金色点缀（#c9a84c）
 - **GitHub:** jimmqw/fateandmethod-website（GitHub Pages）
-- **总页面数：1个（仅首页）**，百度统计：7a310f3a5b54d3c8565e5669ffb815a5
+- **总页面数：17个**，百度统计：7a310f3a5b54d3c8565e5669ffb815a5
 
 ### 新增页面规范
 每次新增文章/页面后，必须同步更新：

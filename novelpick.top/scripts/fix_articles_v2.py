@@ -1,0 +1,708 @@
+#!/usr/bin/env python3
+"""
+Fix malformed article HTML files.
+
+Malformed pattern (novelpick files):
+  <html><head><head>[meta]</head><style>[CSS]</style></head><body>...
+  - First </head> closes the duplicate <head>, orphaning <style> in body
+  - Second </head> is also orphaned
+  - Meta tags between duplicate <head> tags end up as body text
+
+Malformed pattern (some morai files):
+  <html><head>[meta + <style>CSS</style> + scripts]</head><body>...
+  - Scripts are in <head> between </style> and </head> (should be in body)
+
+Both patterns: scripts end up in wrong location.
+"""
+
+import os, re, glob
+
+# ── Site configurations ──────────────────────────────────────────────────────
+
+SITES = {
+    "morai": {
+        "dir":      r"C:\Users\Administrator\.openclaw\workspace\morai-website",
+        "vars":     """        :root {
+            --bg: #060b14;
+            --card: #111d2e;
+            --border: #1a2a3a;
+            --accent: #00d4ff;
+            --accent-dim: rgba(0, 212, 255, 0.12);
+            --text: #c8d4e0;
+            --text-dim: #6a7a8a;
+            --text-bright: #e8f0f8;
+        }""",
+        "fonts":    """    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">""",
+        "baidu":    """<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d1d9d04b764a3f8f5a92e975825446e6";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>""",
+        "nav_logo":  "&lt;morai/&gt;",
+        "nav_links": [
+            ("./ai-tools.html",      "AI Tools"),
+            ("./ai-reviews.html",    "Reviews"),
+            ("./ai-guides.html",     "Guides"),
+            ("./ai-comparisons.html","Comparisons"),
+        ],
+    },
+    "novelpick": {
+        "dir":      r"C:\Users\Administrator\.openclaw\workspace\novelpick-website",
+        "vars":     """        :root {
+            --bg: #0d0a14;
+            --card: #1a1424;
+            --border: #2a2040;
+            --accent: #c9a0dc;
+            --accent-rose: #f0a0b0;
+            --accent-dim: rgba(201, 160, 220, 0.12);
+            --text: #b8a8c8;
+            --text-dim: #7a6888;
+            --text-bright: #ede0f5;
+        }""",
+        "fonts":    """    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">""",
+        "baidu":    """<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d6d20fb609876081e0de8872c69e39aa";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>""",
+        "nav_logo":  "NovelPick",
+        "nav_links": [
+            ("./fantasy.html", "Fantasy"),
+            ("./litrpg.html",  "LitRPG"),
+            ("./scifi.html",   "Sci-Fi"),
+            ("./romance.html", "Romance"),
+        ],
+    },
+}
+
+# ── Complete CSS for each site ───────────────────────────────────────────────
+
+MORAI_CSS = """
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { opacity: 0.8; }
+
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(6, 11, 20, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+        }
+        .nav-inner {
+            max-width: 860px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .nav-logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700; font-size: 1.1rem;
+            color: var(--accent); letter-spacing: -0.02em;
+        }
+        .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+        .nav-links a {
+            font-size: 0.82rem; font-weight: 500;
+            color: var(--text-dim); letter-spacing: 0.02em;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        .progress-bar {
+            position: fixed; top: 60px; left: 0; right: 0; height: 2px; z-index: 99;
+            background: var(--border);
+        }
+        .progress-fill {
+            height: 100%; background: var(--accent);
+            width: 0%; transition: width 0.1s linear;
+        }
+
+        .article-container {
+            max-width: 740px; margin: 0 auto;
+            padding: 3rem 1.5rem 6rem;
+        }
+
+        .article-category {
+            display: inline-flex; align-items: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem; font-weight: 600;
+            color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        .article-category::before {
+            content: '';
+            display: inline-block; width: 6px; height: 6px;
+            background: var(--accent); border-radius: 50%;
+            margin-right: 0.6rem;
+        }
+
+        .article-title {
+            font-size: clamp(1.9rem, 4vw, 2.6rem);
+            font-weight: 800; color: var(--text-bright);
+            line-height: 1.18; letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+        }
+        .article-subtitle {
+            font-size: 1.1rem; color: var(--text-dim);
+            font-weight: 400; line-height: 1.6;
+            margin-bottom: 1.8rem;
+        }
+
+        .article-meta {
+            display: flex; align-items: center; gap: 1.2rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+        .meta-item {
+            display: flex; align-items: center; gap: 0.4rem;
+            font-size: 0.82rem; color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .meta-sep { width: 1px; height: 14px; background: var(--border); }
+
+        .article-lead {
+            font-size: 1.08rem; color: var(--text);
+            line-height: 1.8; margin-bottom: 2rem;
+            padding-left: 1.2rem; border-left: 2px solid var(--accent);
+        }
+
+        .article-content h2 {
+            font-size: 1.35rem; font-weight: 700;
+            color: var(--text-bright);
+            margin: 2.5rem 0 1rem; padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-size: 1.1rem; font-weight: 600;
+            color: var(--text-bright); margin: 1.8rem 0 0.6rem;
+        }
+        .article-content p {
+            font-size: 0.97rem; color: var(--text);
+            margin-bottom: 1.1rem; line-height: 1.8;
+        }
+        .article-content ul, .article-content ol { margin: 0.8rem 0 1.2rem 1.5rem; }
+        .article-content li {
+            font-size: 0.97rem; color: var(--text);
+            margin-bottom: 0.4rem; line-height: 1.7;
+        }
+        .article-content strong { color: var(--text-bright); font-weight: 600; }
+        .article-content a { color: var(--accent); }
+        .article-content .meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem; color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.5rem; margin: 1.8rem 0;
+        }
+        .tool-card-name {
+            font-size: 1.05rem; font-weight: 700;
+            color: var(--text-bright); margin-bottom: 0.3rem;
+        }
+        .tool-card-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem; color: var(--accent); margin-bottom: 0.8rem;
+        }
+        .tool-card-best { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 0.8rem; }
+        .tool-card-pros-cons {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.85rem;
+        }
+        .tool-pros strong { color: #4ade80; }
+        .tool-cons strong { color: #f87171; }
+        .tool-pros, .tool-cons { margin: 0; list-style: none; }
+        .tool-pros li, .tool-cons li { margin-bottom: 0.3rem; }
+
+        .pros-box {
+            background: rgba(74, 222, 128, 0.08);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 8px; padding: 1rem; margin: 0.8rem 0;
+        }
+        .cons-box {
+            background: rgba(248, 113, 113, 0.08);
+            border: 1px solid rgba(248, 113, 113, 0.2);
+            border-radius: 8px; padding: 1rem; margin: 0.8rem 0;
+        }
+        .pros-box strong { color: #4ade80; }
+        .cons-box strong { color: #f87171; }
+        .pros-box p, .cons-box p { margin-bottom: 0.4rem; font-size: 0.9rem; }
+        .pros-box p:last-child, .cons-box p:last-child { margin-bottom: 0; }
+
+        .highlight-box, .verdict {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.5rem; margin: 1.8rem 0;
+        }
+        .highlight-box h3, .verdict h3 {
+            font-size: 1rem; font-weight: 700;
+            color: var(--accent); margin-bottom: 0.8rem;
+        }
+        .highlight-box p, .verdict p { font-size: 0.95rem; color: var(--text); margin-bottom: 0; }
+
+        .related-articles { margin-top: 2.5rem; }
+        .related-articles h3 {
+            font-size: 1rem; font-weight: 700;
+            color: var(--text-bright); margin-bottom: 1rem;
+        }
+        .related-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+        .related-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 10px; padding: 1rem;
+            transition: border-color 0.2s;
+        }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card a { display: flex; align-items: center; gap: 0.8rem; }
+        .related-tag {
+            font-size: 0.7rem; font-weight: 600;
+            color: var(--accent); letter-spacing: 0.06em;
+            text-transform: uppercase; white-space: nowrap;
+        }
+        .related-title { font-size: 0.88rem; color: var(--text); }
+        .related-card:hover .related-title { color: var(--text-bright); }
+
+        .share-bar {
+            position: fixed; left: 2rem; top: 50%; transform: translateY(-50%);
+            display: flex; flex-direction: column; gap: 0.6rem; z-index: 90;
+        }
+        .share-btn {
+            width: 38px; height: 38px;
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            color: var(--text-dim); font-size: 0.85rem; transition: all 0.2s;
+        }
+        .share-btn:hover {
+            background: var(--accent-dim); border-color: var(--accent); color: var(--accent);
+        }
+
+        .article-footer {
+            margin-top: 3rem; padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .back-to-top {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.82rem; color: var(--text-dim); padding: 0.5rem 0;
+        }
+        .back-to-top:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .share-bar { display: none; }
+            .article-container { padding: 2rem 1.2rem 4rem; }
+            .tool-card-pros-cons { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }"""
+
+NOVELPICK_CSS = """
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-rose); }
+
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(13, 10, 20, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+        }
+        .nav-inner {
+            max-width: 860px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700; font-size: 1.3rem;
+            color: var(--accent); letter-spacing: 0.01em;
+        }
+        .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+        .nav-links a {
+            font-size: 0.82rem; font-weight: 500;
+            color: var(--text-dim); letter-spacing: 0.03em;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        .progress-bar {
+            position: fixed; top: 60px; left: 0; right: 0; height: 2px; z-index: 99;
+            background: var(--border);
+        }
+        .progress-fill {
+            height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-rose));
+            width: 0%; transition: width 0.1s linear;
+        }
+
+        .article-container {
+            max-width: 720px; margin: 0 auto;
+            padding: 3rem 1.5rem 6rem;
+        }
+
+        .article-category {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-size: 0.72rem; font-weight: 600;
+            color: var(--accent-rose); letter-spacing: 0.1em; text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        .category-icon { font-size: 1rem; }
+
+        .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4.5vw, 2.8rem);
+            font-weight: 700; color: var(--text-bright);
+            line-height: 1.2; margin-bottom: 1.2rem;
+        }
+        .article-subtitle {
+            font-family: 'Lora', serif;
+            font-size: 1.05rem; color: var(--text-dim);
+            font-style: italic; line-height: 1.65; margin-bottom: 2rem;
+        }
+
+        .article-meta {
+            display: flex; align-items: center; gap: 1rem;
+            padding: 1.2rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+        .meta-item {
+            display: flex; align-items: center; gap: 0.4rem;
+            font-size: 0.82rem; color: var(--text-dim);
+        }
+        .meta-sep { width: 1px; height: 14px; background: var(--border); }
+        .meta-rating { color: var(--accent-rose); }
+
+        .article-cover {
+            width: 100%; height: 280px;
+            background: linear-gradient(135deg, #1a1230 0%, #2a1840 50%, #1a1230 100%);
+            border-radius: 12px; margin-bottom: 2.5rem;
+            display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
+        }
+        .article-cover::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(201, 160, 220, 0.15) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 50%, rgba(240, 160, 176, 0.1) 0%, transparent 60%);
+        }
+        .cover-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem; font-style: italic;
+            color: rgba(201, 160, 220, 0.2);
+            position: relative; z-index: 1;
+        }
+
+        .article-lead {
+            font-family: 'Lora', serif;
+            font-size: 1.08rem; color: var(--text);
+            line-height: 1.8; margin-bottom: 2rem;
+            padding-left: 1.2rem; border-left: 2px solid var(--accent);
+        }
+
+        .article-content p {
+            font-size: 0.97rem; color: var(--text);
+            margin-bottom: 1.3rem; line-height: 1.85;
+        }
+        .article-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem; font-weight: 700;
+            color: var(--text-bright);
+            margin: 2.8rem 0 1rem; padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem; font-weight: 600;
+            color: var(--accent); margin: 1.8rem 0 0.6rem;
+        }
+        .article-content strong { color: var(--text-bright); font-weight: 600; }
+        .article-content ul, .article-content ol { margin: 0.8rem 0 1.2rem 1.5rem; }
+        .article-content li {
+            font-size: 0.97rem; color: var(--text);
+            margin-bottom: 0.4rem; line-height: 1.7;
+        }
+
+        .novel-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.5rem; margin: 1.8rem 0;
+            position: relative;
+        }
+        .novel-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-rose));
+            border-radius: 12px 12px 0 0;
+        }
+        .novel-rank {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem; font-weight: 700;
+            color: var(--border);
+            position: absolute; top: 1rem; right: 1.2rem;
+        }
+        .novel-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem; font-weight: 700;
+            color: var(--text-bright); margin-bottom: 0.3rem;
+            padding-right: 3rem;
+        }
+        .novel-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+        .tag {
+            font-size: 0.7rem; font-weight: 600;
+            padding: 0.2rem 0.6rem; border-radius: 50px; letter-spacing: 0.04em;
+        }
+        .tag-platform { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(201, 160, 220, 0.2); }
+        .tag-status { background: rgba(240, 160, 176, 0.1); color: var(--accent-rose); border: 1px solid rgba(240, 160, 176, 0.2); }
+        .tag-genre { background: rgba(160, 200, 255, 0.08); color: #a0c8ff; border: 1px solid rgba(160, 200, 255, 0.15); }
+        .novel-desc {
+            font-size: 0.9rem; color: var(--text); line-height: 1.7;
+            font-family: 'Lora', serif;
+        }
+
+        .pros-box {
+            background: rgba(74, 222, 128, 0.08);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 8px; padding: 1rem; margin: 0.8rem 0;
+        }
+        .cons-box {
+            background: rgba(248, 113, 113, 0.08);
+            border: 1px solid rgba(248, 113, 113, 0.2);
+            border-radius: 8px; padding: 1rem; margin: 0.8rem 0;
+        }
+        .pros-box strong { color: #4ade80; }
+        .cons-box strong { color: #f87171; }
+        .pros-box p, .cons-box p { margin-bottom: 0.4rem; font-size: 0.9rem; }
+        .pros-box p:last-child, .cons-box p:last-child { margin-bottom: 0; }
+
+        .rating-box {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.5rem; margin: 1.8rem 0;
+        }
+        .rating-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem; font-weight: 700;
+            color: var(--accent); margin-bottom: 1rem;
+        }
+
+        .related-articles { margin-top: 2.5rem; }
+        .related-articles h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem; font-weight: 700;
+            color: var(--text-bright); margin-bottom: 1rem;
+        }
+        .related-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+        .related-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 10px; padding: 1rem;
+            transition: border-color 0.2s;
+        }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card a { display: flex; align-items: center; gap: 0.8rem; }
+        .related-tag {
+            font-size: 0.7rem; font-weight: 600;
+            color: var(--accent-rose); letter-spacing: 0.06em;
+            text-transform: uppercase; white-space: nowrap;
+        }
+        .related-title { font-size: 0.88rem; color: var(--text); }
+        .related-card:hover .related-title { color: var(--text-bright); }
+
+        .share-bar {
+            position: fixed; left: 2rem; top: 50%; transform: translateY(-50%);
+            display: flex; flex-direction: column; gap: 0.6rem; z-index: 90;
+        }
+        .share-btn {
+            width: 38px; height: 38px;
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            color: var(--text-dim); font-size: 0.85rem; transition: all 0.2s;
+        }
+        .share-btn:hover {
+            background: var(--accent-dim); border-color: var(--accent); color: var(--accent);
+        }
+
+        .article-footer {
+            margin-top: 3rem; padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .back-to-top {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.82rem; color: var(--text-dim);
+        }
+        .back-to-top:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .share-bar { display: none; }
+            .article-container { padding: 2rem 1.2rem 4rem; }
+            .nav-links { display: none; }
+        }"""
+
+PROGRESS_SCRIPT = """<script>
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            const el = document.getElementById('progressFill');
+            if (el) el.style.width = progress + '%';
+        });
+    </script>"""
+
+
+# ── Detection ─────────────────────────────────────────────────────────────────
+
+def has_duplicate_heads(content: str) -> bool:
+    """True if file has <head>...<head>...<head Content>...</head> pattern."""
+    return content.count('<head>') >= 2
+
+
+def has_scripts_in_head(content: str) -> bool:
+    """True if <script> tags appear after </style> but before </head>."""
+    style_end = content.find('</style>')
+    head_end = content.find('</head>')
+    if style_end == -1 or head_end == -1:
+        return False
+    # Check if any <script appears in the head after </style>
+    segment = content[style_end:head_end]
+    return '<script' in segment
+
+
+# ── Parsers ───────────────────────────────────────────────────────────────────
+
+def parse_duplicate_head(content: str) -> dict:
+    """
+    For files with <head><head> pattern (novelpick malformed).
+    Extract meta tags, CSS, body content, scripts.
+    """
+    # Find positions
+    first_head = content.find('<head>')
+    second_head = content.find('<head>', first_head + 1)
+    first_head_close = content.find('</head>')
+
+    # The content between second <head> and first </head> are the meta tags
+    meta_block = content[second_head + 6:first_head_close].strip()
+
+    # Collect meta/link/title lines from this block
+    meta_tags = []
+    for line in meta_block.split('\n'):
+        ls = line.strip()
+        if ls.startswith('<meta ') or ls.startswith('<title>') or ls.startswith('<link '):
+            meta_tags.append(ls)
+
+    # Find <style> block (orphaned in body)
+    style_start = content.find('<style>', first_head_close)
+    style_end = content.find('</style>', style_start)
+    css = content[style_start:style_end + 8]  # include </style>
+
+    # Find body start (after the orphaned </head>)
+    orphaned_head = content.find('</head>', style_end)
+    body_start = content.find('<body>', orphaned_head)
+    body_tag_end = content.find('>', body_start) + 1
+
+    # Find body end
+    body_end = content.rfind('</body>')
+    if body_end == -1:
+        body_end = len(content)
+
+    body_raw = content[body_tag_end:body_end].strip()
+
+    # Extract scripts from body
+    scripts = re.findall(r'<script[^>]*>.*?</script>', body_raw, re.DOTALL)
+    for s in scripts:
+        body_raw = body_raw.replace(s, '\n__SCRIPT_PH__\n')
+
+    return {
+        'meta_tags':   meta_tags,
+        'css':         css,
+        'body_content': body_raw.strip(),
+        'scripts':     scripts,
+    }
+
+
+def parse_scripts_in_head(content: str) -> dict:
+    """
+    For files with scripts between </style> and </head> (morai malformed).
+    """
+    # Find <head>
+    head_start = content.find('<head>')
+    head_close = content.find('</head>')
+
+    # Extract meta from head (everything from after <head> to <style>)
+    style_start = content.find('<style>', head_start)
+    meta_block = content[head_start + 6:style_start].strip()
+    meta_tags = []
+    for line in meta_block.split('\n'):
+        ls = line.strip()
+        if ls.startswith('<meta ') or ls.startswith('<title>') or ls.startswith('<link '):
+            meta_tags.append(ls)
+
+    # Extract CSS from <style> block
+    style_end = content.find('</style>', style_start)
+    css = content[style_start:style_end + 8]
+
+    # Scripts are between </style> and </head>
+    scripts = re.findall(r'<script[^>]*>.*?</script>', content[style_end:head_close], re.DOTALL)
+
+    # Body starts after </head>
+    body_start = content.find('<body>', head_close)
+    body_tag_end = content.find('>', body_start) + 1
+    body_end = content.rfind('</body>')
+    if body_end == -1:
+        body_end = len(content)
+
+    body_raw = content[body_tag_end:body_end].strip()
+
+    return {
+        'meta_tags':   meta_tags,
+        'css':         css,
+        'body_content': body_raw.strip(),
+        'scripts':     scripts,
+    }
+
+
+def parse_clean(content: str) -> dict:
+    """
+    For already-correct files that just need scripts moved to body.
+    """
+    head_start = content.find('<head>')
+    head_close = content.find('</head>')
+    body_start = content.find('<body>', head_close)
+    body_tag_end = content.find('>', body_start) + 1
+    body_end = content.rfind('</body>')
+
+    # Meta from head
+    style_start = content.find('<style>', head_start)
+    meta_block = content[head_start + 6:style_start].strip()
+    meta_tags = []
+    for line in meta_block.split('\n'):
+        ls = line.strip()
+        if ls.startswith('<meta ') or ls.startswith('<title>') or ls.startswith('<link '):
+            meta_tags.append(ls)
+
+    # CSS from style block
+    style_end = content.find('</style>', style_start)
+    css = content[style_start:style_end + 8]
+
+    # Body content
+    body_raw = content[body_tag_end:body_end].strip()
+    scripts = re.findall(r'<script[^>]*>.*?</script>', body_raw, re.DOTALL)
+    for s

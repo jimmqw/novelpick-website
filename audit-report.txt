@@ -1,0 +1,190 @@
+=== Daily Site Audit Report 2026-05-22 09:19 ===
+
+Stats:
+- Total: 133
+- OK: 42
+- Problems: 91
+
+PROBLEMS:
+[morai] ai-comparisons.html
+  [related-posts-missing]
+[morai] ai-guides.html
+  [related-posts-missing]
+[morai] ai-reviews.html
+  [related-posts-missing]
+[morai] ai-tools.html
+  [related-posts-missing]
+[morai] best-ai-agents-2026.html
+  [related-posts-missing]
+[morai] best-ai-design-tools-2026.html
+  [article-body-missing]
+[morai] best-ai-research-assistants-2026.html
+  [article-body-missing]
+[morai] best-ai-search-research-tools-2026.html
+  [related-posts-missing]
+[morai] best-ai-tools-2026.html
+  [related-posts-missing]
+[morai] best-ai-video-generation-tools-2026.html
+  [related-posts-missing]
+[morai] best-free-ai-tools-2026-guide.html
+  [footer-missing]
+[morai] chatgpt-vs-claude-vs-gemini-2026.html
+  [article-body-missing]
+[morai] claude-code-vs-cursor-vs-github-copilot-2026.html
+  [baidu-stat-missing]
+[morai] deals.html
+  [related-posts-missing]
+[morai] github-copilot-review-2026.html
+  [breadcrumb-missing] [sidebar-missing] [related-posts-missing] [baidu-stat-missing]
+[morai] how-ai-agents-transform-knowledge-work-2026.html
+  [article-body-missing]
+[morai] index.html
+  [related-posts-missing]
+[morai] search.html
+  [related-posts-missing]
+[morai] template.html
+  [bg-style-missing] [responsive-css-missing]
+[novelpick] best-action-fantasy-web-novels-2026.html
+  [baidu-stat-missing]
+[novelpick] best-apocalypse-and-survival-novels.html
+  [baidu-stat-missing]
+[novelpick] best-apocalypse-survival-web-novels.html
+  [baidu-stat-missing]
+[novelpick] best-cozy-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-cultivation-novels-2026.html
+  [related-posts-missing]
+[novelpick] best-cultivation-novels-female-leads.html
+  [breadcrumb-missing] [sidebar-missing] [footer-missing] [baidu-stat-missing] [article-body-missing]
+[novelpick] best-cyberpunk-novels.html
+  [baidu-stat-missing]
+[novelpick] best-dark-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-enemies-to-lovers-romance-novels.html
+  [baidu-stat-missing]
+[novelpick] best-germinator-novels.html
+  [baidu-stat-missing]
+[novelpick] best-historical-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-litrpg-novels.html
+  [baidu-stat-missing]
+[novelpick] best-progression-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-reincarnation-novels.html
+  [baidu-stat-missing]
+[novelpick] best-reincarnation-web-novels-2026.html
+  [baidu-stat-missing] [article-body-missing]
+[novelpick] best-revenge-web-novels.html
+  [article-body-missing]
+[novelpick] best-science-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-smart-protagonist-fantasy-novels.html
+  [article-body-missing]
+[novelpick] best-solo-leveling-novels.html
+  [baidu-stat-missing]
+[novelpick] best-space-opera-novels-2026.html
+  [baidu-stat-missing]
+[novelpick] best-space-opera-novels.html
+  [baidu-stat-missing]
+[novelpick] best-system-apocalypse-novels.html
+  [baidu-stat-missing]
+[novelpick] best-time-loop-web-novels-2026.html
+  [related-posts-missing]
+[novelpick] best-time-travel-novels.html
+  [baidu-stat-missing]
+[novelpick] best-urban-fantasy-novels-2026-v2.html
+  [baidu-stat-missing]
+[novelpick] best-urban-fantasy-novels-2026.html
+  [baidu-stat-missing]
+[novelpick] best-urban-fantasy-novels.html
+  [baidu-stat-missing]
+[novelpick] best-villain-protagonist-web-novels.html
+  [baidu-stat-missing]
+[novelpick] best-wholesome-and-comfort-reads.html
+  [baidu-stat-missing]
+[novelpick] best-xianxia-cultivation-novels.html
+  [baidu-stat-missing] [read-time-missing]
+[novelpick] best-xianxia-novels-2026.html
+  [related-posts-missing]
+[novelpick] books-like-cradle.html
+  [baidu-stat-missing]
+[novelpick] books-like-harry-potter.html
+  [baidu-stat-missing]
+[novelpick] books-like-lord-of-the-rings.html
+  [baidu-stat-missing]
+[novelpick] books-like-mistborn.html
+  [baidu-stat-missing]
+[novelpick] books-like-percy-jackson.html
+  [baidu-stat-missing]
+[novelpick] books-like-solo-leveling.html
+  [breadcrumb-missing] [sidebar-missing] [related-posts-missing] [baidu-stat-missing]
+[novelpick] index.html
+  [breadcrumb-missing] [sidebar-missing] [related-posts-missing]
+[novelpick] reviews.html
+  [related-posts-missing]
+[novelpick] romance.html
+  [related-posts-missing]
+[novelpick] scifi.html
+  [related-posts-missing]
+[novelpick] shadow-slave-review.html
+  [baidu-stat-missing]
+[novelpick] shadow-slave-vs-legendary-mechanic.html
+  [baidu-stat-missing]
+[novelpick] solo-leveling-inspired-novels.html
+  [baidu-stat-missing]
+[novelpick] solo-leveling-vs-shadow-slave.html
+  [baidu-stat-missing]
+[fateandmethod] bazi-beginners-complete-guide.html
+  [read-time-missing]
+[fateandmethod] bazi-ten-gods-guide.html
+  [article-body-missing] [read-time-missing]
+[fateandmethod] chinese-zodiac-compatibility-guide.html
+  [article-body-missing]
+[fateandmethod] chinese-zodiac-luck-rankings-2026.html
+  [related-posts-missing]
+[fateandmethod] chinese-zodiac-personality-traits.html
+  [read-time-missing]
+[fateandmethod] daily-wisdom-car-sickness.html
+  [read-time-missing]
+[fateandmethod] daily-wisdom-garlic-diarrhea.html
+  [read-time-missing]
+[fateandmethod] daily-wisdom-name-destiny.html
+  [read-time-missing]
+[fateandmethod] daily-wisdom-name-psychology.html
+  [read-time-missing]
+[fateandmethod] daily-wisdom.html
+  [read-time-missing]
+[fateandmethod] daliuren-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] feng-shui-complete-guide-2026.html
+  [read-time-missing]
+[fateandmethod] index.html
+  [breadcrumb-missing] [sidebar-missing] [related-posts-missing]
+[fateandmethod] liuyao-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] meihua-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] taiyi-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] xiaoliuren-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] xiaoliuren.html
+  [related-posts-missing]
+[fateandmethod] xuankong-index.html
+  [sidebar-missing] [related-posts-missing]
+[fateandmethod] ziwei-chart-reading.html
+  [read-time-missing]
+[fateandmethod] ziwei-combinations.html
+  [read-time-missing]
+[fateandmethod] ziwei-intro.html
+  [read-time-missing]
+[fateandmethod] ziwei-palaces.html
+  [read-time-missing]
+[fateandmethod] ziwei-reading.html
+  [read-time-missing]
+[fateandmethod] ziwei-si-hua.html
+  [read-time-missing]
+[fateandmethod] ziwei-stars.html
+  [read-time-missing]
+[fateandmethod] ziwei.html
+  [related-posts-missing]

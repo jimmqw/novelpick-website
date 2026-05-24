@@ -7,6 +7,10 @@ import re
 import sys
 import urllib.request
 
+# Windows: force UTF-8 stdout to avoid GBK encode errors
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 TAVILY_URL = "https://api.tavily.com/search"
 
 

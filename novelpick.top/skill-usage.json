@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "description": "技能使用追踪日志。每次使用技能后追加记录。格式：{skill, timestamp, use_case, session, notes}",
+    "created": "2026-04-09",
+    "archive_threshold_days": 90,
+    "warn_threshold_days": 30
+  },
+  "records": [
+    {
+      "skill": "clawhub",
+      "timestamp": "2026-04-09T00:10:00+08:00",
+      "use_case": "搜索并了解Hermes Agent项目",
+      "session": "2026-04-09-001",
+      "notes": "搜索Hermes Agent开源项目概况"
+    },
+    {
+      "skill": "multi-search-engine",
+      "timestamp": "2026-04-09T00:10:00+08:00",
+      "use_case": "辅助搜索Hermes Agent相关信息",
+      "session": "2026-04-09-001",
+      "notes": "用于web research"
+    },
+    {
+      "skill": "clawhub",
+      "timestamp": "2026-04-09T00:20:38.207483+08:00",
+      "use_case": "搜索了解Hermes Agent",
+      "session": "2026-04-09-001",
+      "notes": "NousResearch开源项目调研"
+    },
+    {
+      "skill": "multi-search-engine",
+      "timestamp": "2026-04-09T00:20:38.247142+08:00",
+      "use_case": "搜索Hermes Agent信息",
+      "session": "2026-04-09-001",
+      "notes": "辅助web research"
+    }
+  ],
+  "stats": {
+    "total_records": 4,
+    "unique_skills_used": 2,
+    "last_analyzed": "2026-04-09T00:20:25.601819+08:00",
+    "cold_count": 0,
+    "warm_count": 0,
+    "never_used_count": 24,
+    "last_updated": "2026-04-09T00:20:38.247142+08:00"
+  }
+}

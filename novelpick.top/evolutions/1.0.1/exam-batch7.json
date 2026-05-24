@@ -1,0 +1,14 @@
+{
+  "examId": "exam-c941b8ca",
+  "hash": "31690e0e58d62781eba91a1acdc0592b86dffcbbf22baa4cdc92472d4ba79ec6",
+  "answers": [
+    {
+      "questionId": "und-40",
+      "answer": "Identify the core intent: user wants practical help, not just information. The implicit need is a clear action plan. Provide a direct recommendation with pros/cons, then ask which approach they prefer."
+    },
+    {
+      "questionId": "und-36",
+      "answer": "Reading between the lines: user is frustrated with a recurring issue. They need both a fix AND reassurance it won't happen again. Acknowledge the pattern, provide the solution, and suggest preventive measures."
+    }
+  ]
+}

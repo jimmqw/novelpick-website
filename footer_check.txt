@@ -1,0 +1,10 @@
+File: best-ai-image-editors-2026.html (morai)
+  Found (c): False
+  Found &copy;: False
+  Found copyright: False
+  Found 版权所有: False
+File: ziwei-combinations.html (fate)
+  Found (c): False
+  Found &copy;: False
+  Found copyright: False
+  Found 版权所有: False

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | NovelPick</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="keywords" content="{{KEYWORDS}}">
+    <link rel="canonical" href="{{CANONICAL}}">
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{OG_DESCRIPTION}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{OG_URL}}">
+    <meta property="og:site_name" content="NovelPick">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{TWITTER_TITLE}}">
+    <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --bg:#0d0a14;
+            --bg2:#130e20;
+            --bg3:#1a1230;
+            --lavender:#c9a0dc;
+            --lavender-dim:rgba(201,160,220,.1);
+            --lavender-border:rgba(201,160,220,.15);
+            --rose:#f0a0b0;
+            --text:#d4c5e0;
+            --text-dim:rgba(201,160,220,.55);
+            --border:rgba(201,160,220,.12);
+            --card-bg:#130e20;
+        }
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+        a{color:var(--lavender);text-decoration:none;transition:color .2s}
+        a:hover{color:var(--rose)}
+        h1,h2,h3{font-family:'Playfair Display',serif}
+        
+        /* NAV */
+        nav{position:sticky;top:0;z-index:100;background:rgba(13,10,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.75rem 0}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
+        .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--lavender);font-style:italic}
+        .nav-logo span{color:var(--rose)}
+        .nav-links{display:flex;gap:.25rem;list-style:none}
+        .nav-links a{display:block;padding:.45rem .85rem;border-radius:8px;font-size:.88rem;font-weight:500;color:var(--text-dim)}
+        .nav-links a:hover,.nav-links a.active{color:var(--lavender);background:var(--lavender-dim)}
+
+        /* BREADCRUMB */
+        .breadcrumb{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;font-size:.85rem;color:var(--text-dim)}
+        .breadcrumb a{color:var(--text-dim)}
+        .breadcrumb a:hover{color:var(--lavender)}
+        .breadcrumb .sep{margin:0 .3rem;opacity:.4}
+
+        /* ARTICLE HERO */
+        .article-hero{min-height:35vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.5rem 1.5rem;position:relative}
+        .article-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(201,160,220,.06) 0%,transparent 70%)}
+        .article-hero .category-tag{background:rgba(201,160,220,.1);color:var(--lavender);border:1px solid rgba(201,160,220,.2);padding:.3rem 1rem;border-radius:50px;font-size:.75rem;font-weight:600;margin-bottom:1rem}
+        .article-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;line-height:1.15;max-width:800px;margin-bottom:.8rem}
+        .article-hero .subtitle{font-size:1rem;color:var(--text-dim);max-width:580px;margin-bottom:1rem}
+        .article-meta{display:flex;gap:.5rem;font-size:.85rem;color:var(--text-dim)}
+
+        /* PAGE WRAP */
+        .page-wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem 4rem;display:grid;grid-template-columns:1fr 280px;gap:2.5rem;align-items:start}
+        @media(max-width:900px){.page-wrap{grid-template-columns:1fr}}
+
+        /* ARTICLE BODY */
+        .article-body{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:2.5rem;position:relative}
+        .article-body::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--lavender),var(--rose));opacity:.6}
+        .article-body p{margin-bottom:1.1rem;color:var(--text);font-size:.97rem}
+        .article-body h2{font-size:1.4rem;font-weight:700;color:#fff;margin:2.2rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+        .article-body h3{font-size:1.1rem;font-weight:700;color:#fff;margin:1.5rem 0 .6rem}
+        .article-body ul{margin:.8rem 0 1rem 1.4rem}
+        .article-body li{margin-bottom:.4rem;color:var(--text)}
+        .article-body strong{color:#fff;font-weight:600}
+
+        /* BOOK CARD */
+        .book-card{background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--lavender);border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+        .book-card h3{color:var(--lavender);font-size:1.05rem;font-weight:700;margin-bottom:.4rem}
+        .book-card .meta{color:var(--text-dim);font-size:.85rem;margin-bottom:.5rem}
+        .book-card p{font-size:.92rem;margin-bottom:.5rem}
+
+        /* VERDICT */
+        .verdict{background:linear-gradient(135deg,rgba(201,160,220,.08),rgba(240,160,176,.05));border:1px solid rgba(201,160,220,.2);border-radius:14px;padding:1.8rem;margin-top:2rem}
+        .verdict::before{content:'';display:block;height:3px;background:linear-gradient(90deg,var(--lavender),var(--rose));border-radius:14px 14px 0 0;margin:-1.8rem -1.8rem 1rem -1.8rem}
+        .verdict h3{font-size:1.1rem;font-weight:700;color:var(--lavender);margin-bottom:.6rem}
+        .verdict p{font-size:.95rem}
+
+        /* RELATED */
+        .related-articles{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:1.5rem;margin-top:2rem}
+        .related-articles h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:1rem}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem;margin-top:1rem}
+        .related-card a{display:block;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:1rem}
+        .related-tag{display:inline-block;background:rgba(201,160,220,.07);color:var(--lavender);font-size:.68rem;padding:.1rem .5rem;border-radius:4px;margin-bottom:.3rem;text-transform:uppercase;font-weight:700}
+        .related-title{display:block;color:#fff;font-weight:600;font-size:.88rem;line-height:1.4}
+
+        /* PREV NEXT */
+        .prev-next{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0 0}
+        .pn-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
+        .pn-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--lavender);margin-bottom:.3rem;font-weight:700}
+        .pn-card a{color:#fff;font-weight:600;font-size:.9rem}
+        .pn-card.next{text-align:right}
+
+        /* SIDEBAR */
+        .sidebar{position:sticky;top:80px}
+        .sidebar-widget{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:1.2rem;margin-bottom:1.2rem}
+        .sidebar-widget h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--lavender);margin-bottom:.8rem;border-bottom:2px solid var(--border);padding-bottom:.5rem;font-weight:700}
+        .sidebar-widget ul{list-style:none;margin:0;padding:0}
+        .sidebar-widget li{margin-bottom:.5rem}
+        .sidebar-widget li a{color:var(--text-dim);font-size:.87rem}
+        .sidebar-widget li a:hover{color:var(--lavender)}
+
+        /* FOOTER */
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center}
+        .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem}
+        .footer-links a{color:var(--text-dim);font-size:.88rem}
+        .footer-links a:hover{color:var(--lavender)}
+        .footer-copy{color:var(--text-dim);font-size:.82rem;opacity:.6}
+
+        @media(max-width:600px){.article-body{padding:1.5rem}.article-hero h1{font-size:1.8rem}.prev-next{grid-template-columns:1fr}.pn-card.next{text-align:left}}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Novel<span>Pick</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/fantasy.html">Fantasy</a></li>
+                <li><a href="/litrpg.html">LitRPG</a></li>
+                <li><a href="/scifi.html">Sci-Fi</a></li>
+                <li><a href="/romance.html">Romance</a></li>
+                <li><a href="/reviews.html">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="sep">›</span>
+        <a href="{{CATEGORY_LINK}}">{{CATEGORY}}</a>
+        <span class="sep">›</span>
+        <span>{{TITLE}}</span>
+    </div>
+
+    <section class="article-hero">
+        <span class="category-tag">{{CATEGORY_ICON}} {{CATEGORY}}</span>
+        <h1>{{TITLE}}</h1>
+        <p class="subtitle">{{SUBTITLE}}</p>
+        <div class="article-meta">
+            <span>📅 {{DATE}}</span>
+            <span>⏱️ {{READ_TIME}}</span>
+        </div>
+    </section>
+
+    <div class="page-wrap">
+        <main class="article-body">
+            {{CONTENT}}
+            
+            <div class="related-articles">
+                <h3>Keep Reading</h3>
+                <div class="related-grid">
+                    {{RELATED_ARTICLES}}
+                </div>
+            </div>
+
+            <div class="prev-next">
+                <div class="pn-card prev">
+                    <span class="pn-label">← Previous</span>
+                    <a href="{{PREV_LINK}}">{{PREV_TITLE}}</a>
+                </div>
+                <div class="pn-card next">
+                    <span class="pn-label">Next →</span>
+                    <a href="{{NEXT_LINK}}">{{NEXT_TITLE}}</a>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="/fantasy.html">☁️ Fantasy</a></li>
+                    <li><a href="/litrpg.html">⚔️ LitRPG</a></li>
+                    <li><a href="/scifi.html">🚀 Sci-Fi</a></li>
+                    <li><a href="/romance.html">❤️ Romance</a></li>
+                    <li><a href="/reviews.html">⭐ Reviews</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h4>Popular</h4>
+                <ul>
+                    <li><a href="/books-like-cradle.html">Books Like Cradle</a></li>
+                    <li><a href="/best-litrpg-novels.html">Best LitRPG 2026</a></li>
+                    <li><a href="/solo-leveling-inspired-novels.html">Solo Leveling Inspired</a></li>
+                    <li><a href="/best-xianxia-cultivation-novels.html">Xianxia Picks</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/fantasy.html">Fantasy</a>
+            <a href="/litrpg.html">LitRPG</a>
+            <a href="/scifi.html">Sci-Fi</a>
+            <a href="/romance.html">Romance</a>
+            <a href="/reviews.html">Reviews</a>
+        </div>
+        <p class="footer-copy">© 2026 NovelPick. All rights reserved.</p>
+    </footer>
+</body>
+</html>

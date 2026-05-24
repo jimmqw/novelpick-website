@@ -38,10 +38,9 @@
   "stats": {
     "total_records": 4,
     "unique_skills_used": 2,
-    "last_analyzed": "2026-04-09T00:20:25.601819+08:00",
+    "last_analyzed": "2026-05-01T09:13:46.696990+08:00",
     "cold_count": 0,
     "warm_count": 0,
-    "never_used_count": 24,
-    "last_updated": "2026-04-09T00:20:38.247142+08:00"
+    "never_used_count": 40
   }
 }

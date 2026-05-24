@@ -1,0 +1,7 @@
+Found 08:01 at index 19137
+�跃记录可供参考。最近的SessionMemory记录（04:02）已涵盖前期内容，无法确认08:01-08:01时段有新对话发生。
+  - confidence: 0.58
+  - evidence: memory/.dreams/session-corpus/2026-04-25.txt:78-78
+  - recalls: 0
+  - status: staged
+- Candidate: User: [cron:2c4ea7cf-0144-4c

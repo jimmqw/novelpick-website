@@ -1,0 +1,870 @@
+{
+  "ok": [
+    {
+      "site": "morai-website",
+      "file": "best-ai-design-tools-2026.html",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "site": "morai-website",
+      "file": "chatgpt-vs-claude-vs-gemini-2026.html",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "site": "morai-website",
+      "file": "how-ai-agents-transform-knowledge-work-2026.html",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-revenge-web-novels.html",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-smart-protagonist-fantasy-novels.html",
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "bad": [
+    {
+      "site": "morai-website",
+      "file": "ai-agent-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-agents-for-beginners-guide.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-code-review-complete-guide-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-code-review-tools.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开39/关38)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-comparisons.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-for-small-business-guide.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-guides.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-image-generators.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-reviews.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-tools.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "ai-writing-tools.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-agents-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-chatbots-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-coding-assistants-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开47/关46)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-coding-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-email-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开52/关51)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-image-editors-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开52/关51)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-image-generators-2026-comparison.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开45/关44)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-marketing-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开52/关51)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-meeting-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开47/关46)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-music-generation-tools-2026.html",
+      "issues": [
+        "header缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-note-taking-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开52/关51)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-presentation-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-productivity-tools-2026.html",
+      "issues": [
+        "header缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-research-assistants-2026.html",
+      "issues": [
+        "div嵌套不平衡(开44/关45)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-search-research-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-seo-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开47/关46)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-tools-for-students-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-translation-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-video-editing-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-video-generation-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-ai-voice-cloning-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-free-ai-tools-2026-guide.html",
+      "issues": [
+        "header缺失",
+        "footer缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "best-free-ai-tools-2026.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开47/关46)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "chatgpt-vs-claude.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开33/关32)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "claude-3-7-sonnet-review.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开46/关45)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "claude-code-vs-cursor-vs-github-copilot-2026.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "cursor-ai-review.html",
+      "issues": [
+        "header缺失",
+        "侧边栏内容空",
+        "div嵌套不平衡(开30/关29)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "deals.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "github-copilot-review-2026.html",
+      "issues": [
+        "面包屑缺失",
+        "相关文章缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "index.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "search.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失",
+        "侧边栏内容空"
+      ],
+      "ok": false
+    },
+    {
+      "site": "morai-website",
+      "file": "template.html",
+      "issues": [
+        "百度统计缺失",
+        "CSS样式异常",
+        "响应式CSS缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-action-fantasy-web-novels-2026.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-apocalypse-and-survival-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-apocalypse-survival-web-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-cozy-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-cultivation-novels-2026.html",
+      "issues": [
+        "相关文章缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-cultivation-novels-female-leads.html",
+      "issues": [
+        "header缺失",
+        "面包屑缺失",
+        "侧边栏缺失",
+        "footer缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-cyberpunk-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-dark-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-enemies-to-lovers-romance-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-germinator-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-harem-fantasy-novels-2026.html",
+      "issues": [
+        "header缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-historical-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-litrpg-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-progression-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-reincarnation-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-reincarnation-web-novels-2026.html",
+      "issues": [
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-science-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-solo-leveling-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-space-opera-novels-2026.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-space-opera-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-system-apocalypse-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-time-loop-web-novels-2026.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-time-travel-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-urban-fantasy-novels-2026-v2.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-urban-fantasy-novels-2026.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-urban-fantasy-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-villain-protagonist-web-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-wholesome-and-comfort-reads.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "best-xianxia-cultivation-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-cradle.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-harry-potter.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-lord-of-the-rings.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-mistborn.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-percy-jackson.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "books-like-solo-leveling.html",
+      "issues": [
+        "面包屑缺失",
+        "侧边栏缺失",
+        "相关文章缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "fantasy.html",
+      "issues": [
+        "header缺失",
+        "div嵌套不平衡(开29/关30)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "index.html",
+      "issues": [
+        "header缺失",
+        "面包屑缺失",
+        "侧边栏缺失",
+        "相关文章缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "litrpg.html",
+      "issues": [
+        "header缺失",
+        "div嵌套不平衡(开31/关32)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "reviews.html",
+      "issues": [
+        "header缺失",
+        "相关文章缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "romance.html",
+      "issues": [
+        "header缺失",
+        "div嵌套不平衡(开15/关16)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "scifi.html",
+      "issues": [
+        "header缺失",
+        "div嵌套不平衡(开25/关26)"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "shadow-slave-review.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "shadow-slave-vs-legendary-mechanic.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "solo-leveling-inspired-novels.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    },
+    {
+      "site": "novelpick-website",
+      "file": "solo-leveling-vs-shadow-slave.html",
+      "issues": [
+        "header缺失",
+        "百度统计缺失"
+      ],
+      "ok": false
+    }
+  ],
+  "summary": {
+    "total": 94,
+    "ok": 5,
+    "bad": 89
+  }
+}
