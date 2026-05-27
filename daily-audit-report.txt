@@ -1,0 +1,174 @@
+========================================
+   DAILY WEBSITE QUALITY AUDIT
+   日期: 2026-05-01 09:06
+   扫描范围: morai.top + novelpick.top + fateandmethod.com
+========================================
+
+总扫描: 131 页面
+  ├─ morai.top: 47 页
+  ├─ novelpick.top: 47 页
+  └─ fateandmethod.com: 37 页
+
+========================================
+
+### ✅ 正常页面（0 问题）
+
+none — 每个站点都有需要注意的问题
+
+========================================
+
+### ⚠️ 有问题的页面
+
+---
+
+#### 📌 morai.top (47 pages, 42有问题)
+
+**问题1: 40页使用旧模板，缺少`<header>`语义标签和渐变背景**
+这些页面使用`<nav class="nav">`作为页面顶部而非语义化的`<header>`标签，且导航栏无渐变色背景。
+
+页面清单（40页）：
+ai-agent-tools-2026.html, ai-agents-for-beginners-guide.html,
+ai-code-review-complete-guide-2026.html, ai-code-review-tools.html,
+ai-comparisons.html, ai-for-small-business-guide.html, ai-guides.html,
+ai-image-generators.html, ai-reviews.html, ai-tools.html,
+ai-writing-tools.html, best-ai-agents-2026.html, best-ai-chatbots-2026.html,
+best-ai-coding-assistants-2026.html, best-ai-coding-tools-2026.html,
+best-ai-email-tools-2026.html, best-ai-image-editors-2026.html,
+best-ai-image-generators-2026-comparison.html, best-ai-marketing-tools-2026.html,
+best-ai-meeting-tools-2026.html, best-ai-music-generation-tools-2026.html,
+best-ai-note-taking-tools-2026.html, best-ai-presentation-tools-2026.html,
+best-ai-productivity-tools-2026.html, best-ai-research-assistants-2026.html,
+best-ai-search-research-tools-2026.html, best-ai-seo-tools-2026.html,
+best-ai-tools-2026.html, best-ai-tools-for-students-2026.html,
+best-ai-translation-tools-2026.html, best-ai-video-editing-tools-2026.html,
+best-ai-video-generation-tools-2026.html, best-ai-voice-cloning-tools-2026.html,
+best-free-ai-tools-2026-guide.html, best-free-ai-tools-2026.html,
+chatgpt-vs-claude.html, claude-3-7-sonnet-review.html,
+cursor-ai-review.html, deals.html, index.html, search.html
+
+✅ 已使用新模板（4页）：
+best-ai-design-tools-2026.html, chatgpt-vs-claude-vs-gemini-2026.html,
+how-ai-agents-transform-knowledge-work-2026.html, best-ai-productivity-tools-2026.html
+
+---
+
+**问题2: 13页 div 嵌套不平衡（open > close, 均差1）**
+打开`<div>`比关闭`</div>`多一个，缺少某个`</div>`标签。
+- ai-code-review-tools.html (39:38)
+- best-ai-coding-assistants-2026.html (47:46)
+- best-ai-email-tools-2026.html (52:51)
+- best-ai-image-editors-2026.html (52:51)
+- best-ai-image-generators-2026-comparison.html (45:44)
+- best-ai-marketing-tools-2026.html (52:51)
+- best-ai-meeting-tools-2026.html (47:46)
+- best-ai-note-taking-tools-2026.html (52:51)
+- best-ai-seo-tools-2026.html (47:46)
+- best-free-ai-tools-2026.html (47:46)
+- chatgpt-vs-claude.html (33:32)
+- claude-3-7-sonnet-review.html (46:45)
+- cursor-ai-review.html (30:29)
+
+**问题3: 1页 div 嵌套不平衡（close > open）**
+- best-ai-research-assistants-2026.html (44:45)
+
+**问题4: 2页缺少百度统计代码**
+- claude-code-vs-cursor-vs-github-copilot-2026.html
+- github-copilot-review-2026.html
+
+**问题5: 1页缺少版权信息**
+- best-ai-image-editors-2026.html
+
+**问题6: 1页缺少相关文章模块**
+- best-ai-search-research-tools-2026.html
+
+---
+
+#### 📌 novelpick.top (47 pages, 44有问题)
+
+**问题1: 36页缺少百度统计代码（严重！）**
+这些页面正在发布但没有被百度统计追踪：
+
+best-action-fantasy-web-novels-2026.html, best-apocalypse-and-survival-novels.html,
+best-apocalypse-survival-web-novels.html, best-cozy-fantasy-novels.html,
+best-cultivation-novels-female-leads.html, best-cyberpunk-novels.html,
+best-dark-fantasy-novels.html, best-enemies-to-lovers-romance-novels.html,
+best-germinator-novels.html, best-historical-fantasy-novels.html,
+best-litrpg-novels.html, best-progression-fantasy-novels.html,
+best-reincarnation-novels.html, best-reincarnation-web-novels-2026.html,
+best-science-fantasy-novels.html, best-solo-leveling-novels.html,
+best-space-opera-novels-2026.html, best-space-opera-novels.html,
+best-system-apocalypse-novels.html, best-time-travel-novels.html,
+best-urban-fantasy-novels-2026-v2.html, best-urban-fantasy-novels-2026.html,
+best-urban-fantasy-novels.html, best-villain-protagonist-web-novels.html,
+best-wholesome-and-comfort-reads.html, best-xianxia-cultivation-novels.html,
+books-like-cradle.html, books-like-harry-potter.html, books-like-lord-of-the-rings.html,
+books-like-mistborn.html, books-like-percy-jackson.html, books-like-solo-leveling.html,
+shadow-slave-review.html, shadow-slave-vs-legendary-mechanic.html,
+solo-leveling-inspired-novels.html, solo-leveling-vs-shadow-slave.html
+
+✅ 已有百度统计（11页）：
+best-cultivation-novels-2026.html, best-harem-fantasy-novels-2026.html,
+best-revenge-web-novels.html, best-smart-protagonist-fantasy-novels.html,
+best-time-loop-web-novels-2026.html, fantasy.html, index.html, litrpg.html,
+reviews.html, romance.html, scifi.html
+
+**问题2: best-cultivation-novels-female-leads.html — 结构性缺失**
+- 缺少面包屑导航
+- 缺少侧边栏
+- 缺少版权信息
+- 缺少百度统计
+
+**问题3: books-like-solo-leveling.html — 结构性缺失**
+- 缺少面包屑导航
+- 缺少侧边栏
+- 缺少百度统计
+
+**问题4: 4页 div 嵌套不平衡（close > open, 均差1）**
+- fantasy.html (29:30)
+- litrpg.html (31:32)
+- romance.html (15:16)
+- scifi.html (25:26)
+（均为分类/列表页）
+
+**问题5: 1页缺少阅读时间估算**
+- best-xianxia-cultivation-novels.html
+
+**问题6: 2页缺少版权声明**
+- best-cultivation-novels-female-leads.html
+- best-villain-protagonist-web-novels.html
+
+---
+
+#### 📌 fateandmethod.com (37 pages, 4有问题)
+
+**问题1: 4页缺少 header 结构**
+- bazi-beginners-complete-guide.html
+- chinese-zodiac-personality-traits.html
+- feng-shui-fundamentals.html
+- index.html
+（注：这些页面有`<nav>`导航但无`<header>`包裹，且导航有渐变色）
+
+**问题2: 1页区段级 div 不平衡**
+- bazi-beginners-complete-guide.html (body部分 22:24, diff=-2)
+
+========================================
+
+### 📊 统计
+
+| 站点 | 总页数 | 有问题 | 严重问题 |
+|------|--------|--------|----------|
+| morai.top | 47 | 42 | 13 div不平衡 + 2缺百度统计 |
+| novelpick.top | 47 | 44 | **36缺百度统计** + 4 div不平衡 |
+| fateandmethod.com | 37 | 4 | 1 div不平衡 |
+| **合计** | **131** | **90** | |
+
+========================================
+
+### 关键建议
+
+1. **Novelpick 百度统计缺失（36页）** — 最严重问题。建议批量在模板中添加百度统计脚本到所有文章页
+2. **Morai 旧模板升级** — 40页使用旧模板，建议全部迁移到带`<header>`+渐变背景的新模板
+3. **Div 不平衡修复** — morai 14页 + novelpick 4页，统一在模板层加上丢失的`</div>`
+4. **Fateandmethod 4页添加 `<header>`** — 虽然功能正常但结构语义化可改善
+
+========================================

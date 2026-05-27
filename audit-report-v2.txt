@@ -1,0 +1,360 @@
+网站巡检报告 v2
+==================================================
+
+巡检时间: 2026-04-25 09:00
+
+总页面数: 131
+正常: 46
+有问题: 85
+
+=== 问题文件 ===
+
+文件: C:\Users\Administrator\github\morai-website\ai-comparisons.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\ai-guides.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\ai-reviews.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\ai-tools.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\best-ai-agents-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\morai-website\best-ai-image-editors-2026.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\morai-website\best-ai-search-research-tools-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\morai-website\best-ai-tools-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\morai-website\best-ai-video-generation-tools-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\morai-website\best-free-ai-tools-2026-guide.html
+  - footer缺失
+
+文件: C:\Users\Administrator\github\morai-website\claude-code-vs-cursor-vs-github-copilot-2026.html
+  - 百度统计代码缺失
+
+文件: C:\Users\Administrator\github\morai-website\deals.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\github-copilot-review-2026.html
+  - 面包屑导航缺失
+  - 相关文章区块缺失
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\index.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\search.html
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\morai-website\template.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(45字符)
+  - body无背景样式
+  - 无响应式CSS(@media)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-action-fantasy-web-novels-2026.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-apocalypse-and-survival-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-apocalypse-survival-web-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-cozy-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-cultivation-novels-2026.html
+  - 相关文章区块缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-cultivation-novels-female-leads.html
+  - 面包屑导航缺失
+  - 侧边栏缺失
+  - footer缺失
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-cyberpunk-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-dark-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-enemies-to-lovers-romance-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-germinator-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-harem-fantasy-novels-2026.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-historical-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-litrpg-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-progression-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-reincarnation-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-reincarnation-web-novels-2026.html
+  - 百度统计代码缺失
+
+文件: C:\Users\Administrator\github\novelpick-website\best-revenge-web-novels.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-science-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-smart-protagonist-fantasy-novels.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-solo-leveling-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-space-opera-novels-2026.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-space-opera-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-system-apocalypse-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-time-loop-web-novels-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\novelpick-website\best-time-travel-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-urban-fantasy-novels-2026-v2.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-urban-fantasy-novels-2026.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-urban-fantasy-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-villain-protagonist-web-novels.html
+  - footer无版权信息
+  - 百度统计代码缺失
+
+文件: C:\Users\Administrator\github\novelpick-website\best-wholesome-and-comfort-reads.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\best-xianxia-cultivation-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-cradle.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-harry-potter.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-lord-of-the-rings.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-mistborn.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-percy-jackson.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\books-like-solo-leveling.html
+  - 面包屑导航缺失
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\index.html
+  - 面包屑导航缺失
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\reviews.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\novelpick-website\shadow-slave-review.html
+  - 百度统计代码缺失
+
+文件: C:\Users\Administrator\github\novelpick-website\shadow-slave-vs-legendary-mechanic.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\solo-leveling-inspired-novels.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\novelpick-website\solo-leveling-vs-shadow-slave.html
+  - 百度统计代码缺失
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\bazi-beginners-complete-guide.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\chinese-zodiac-compatibility-guide.html
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+  - og:title缺失
+  - description meta缺失
+  - canonical链接缺失
+  - viewport meta缺失
+
+文件: C:\Users\Administrator\github\fateandmethod-site\chinese-zodiac-luck-rankings-2026.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\fateandmethod-site\chinese-zodiac-personality-traits.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daily-wisdom-car-sickness.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daily-wisdom-garlic-diarrhea.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daily-wisdom-name-destiny.html
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daily-wisdom-name-psychology.html
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daily-wisdom-sun-absorption.html
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\daliuren-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\feng-shui-2026-year-guide.html
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\feng-shui-complete-guide-2026.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\feng-shui-fundamentals.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\index.html
+  - 面包屑导航缺失
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\liuyao-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\meihua-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\taiyi-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\xiaoliuren-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\xiaoliuren.html
+  - 相关文章区块缺失
+
+文件: C:\Users\Administrator\github\fateandmethod-site\xuankong-index.html
+  - 侧边栏缺失
+  - 相关文章区块缺失
+  - footer无版权信息
+  - 文章正文过短或缺失(0字符)
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei-combinations.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei-intro.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei-palaces.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei-reading.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei-stars.html
+  - footer无版权信息
+
+文件: C:\Users\Administrator\github\fateandmethod-site\ziwei.html
+  - 相关文章区块缺失
+

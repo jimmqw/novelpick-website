@@ -1,0 +1,19 @@
+{
+  "window_start": "2026-04-23T00:00:00Z",
+  "window_end": "2026-04-24T00:00:00Z",
+  "session_count": 0,
+  "aggregates_overall": {
+    "abandonment_rate": 0,
+    "gratitude_rate": 0,
+    "frustration_rate": 0,
+    "follow_up_48h_rate": 0
+  },
+  "aggregates_operational": {
+    "tokens_per_session": { "median": 0, "p90": 0 },
+    "cost_per_session_usd": { "median": 0, "p90": 0 },
+    "first_response_latency_ms": { "median": 0, "p90": 0 },
+    "total_wall_time_s": { "median": 0, "p90": 0 },
+    "tool_calls_per_session": { "median": 0, "p90": 0 }
+  },
+  "sessions": []
+}

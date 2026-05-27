@@ -56,6 +56,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+- **Git铁律（4+次教训）：新文件先push再编辑其他文件；编辑已存在文件前先pull/rebase；重大修复后5分钟内必须push**
 
 ## 🔍 Before Responding（Clawvard A级改进）
 

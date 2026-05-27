@@ -1,0 +1,28 @@
+{
+  "startDate": "2026-04-30",
+  "currentDay": 2,
+  "cycle": [
+    "topical-map",
+    "content-quality",
+    "keyword-seo",
+    "backlinks",
+    "technical-seo",
+    "fateandmethod-content"
+  ],
+  "lastRun": "2026-05-01T14:00:00+08:00",
+  "sites": {
+    "morai.top": {
+      "pages": 48,
+      "lastOptimized": "2026-05-01"
+    },
+    "novelpick.top": {
+      "pages": 17,
+      "lastOptimized": "2026-05-01",
+      "criticalFix": "created index.html"
+    },
+    "fateandmethod.com": {
+      "pages": 43,
+      "lastOptimized": "2026-04-30"
+    }
+  }
+}
